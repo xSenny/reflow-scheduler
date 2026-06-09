@@ -56,6 +56,11 @@ export class ReflowService {
     const updatedWoById = new Map<string, WorkOrder>();
 
     for (const wo of sorted) {
+      if (!wcById.has(wo.data.workCenterId)) {
+        throw new Error(
+          `Work order ${wo.data.workOrderNumber} references unknown work center ${wo.data.workCenterId}`,
+        );
+      }
       if (wo.data.isMaintenance) {
         updatedWorkOrders.push(wo);
         updatedWoById.set(wo.docId, wo);
@@ -118,25 +123,41 @@ export class ReflowService {
     let cursor = earliestStart;
 
     for (let i = 0; i < 1000; i++) {
-      const candidate = addWorkingMinutes(cursor, duration, wc.data.shifts, blocked);
+      const candidate = addWorkingMinutes(
+        cursor,
+        duration,
+        wc.data.shifts,
+        blocked,
+      );
       const conflict = occupied.find((o) => overlaps(o, candidate));
       if (!conflict) return candidate;
       cursor = conflict.end;
     }
 
-    throw new Error(`Could not find a valid placement on ${wc.data.name} after 1000 attempts`);
+    throw new Error(
+      `Could not find a valid placement on ${wc.data.name} after 1000 attempts`,
+    );
   }
 
   // Diffs original vs updated work orders and returns a change record for each that moved.
-  private buildChanges(original: WorkOrder[], updated: WorkOrder[]): ScheduleChange[] {
+  private buildChanges(
+    original: WorkOrder[],
+    updated: WorkOrder[],
+  ): ScheduleChange[] {
     const changes: ScheduleChange[] = [];
     const updatedMap = new Map<string, WorkOrder>();
     for (const wo of updated) updatedMap.set(wo.docId, wo);
 
     for (const wo of original) {
       const updatedWo = updatedMap.get(wo.docId)!;
-      const startShiftMinutes = minutesBetween(toMs(wo.data.startDate), toMs(updatedWo.data.startDate));
-      const endShiftMinutes = minutesBetween(toMs(wo.data.endDate), toMs(updatedWo.data.endDate));
+      const startShiftMinutes = minutesBetween(
+        toMs(wo.data.startDate),
+        toMs(updatedWo.data.startDate),
+      );
+      const endShiftMinutes = minutesBetween(
+        toMs(wo.data.endDate),
+        toMs(updatedWo.data.endDate),
+      );
 
       if (startShiftMinutes === 0 && endShiftMinutes === 0) continue;
 
@@ -145,11 +166,20 @@ export class ReflowService {
       if (startShiftMinutes === 0 && endShiftMinutes !== 0) {
         reasons.push("end date corrected from stale input");
       } else {
-        const pushedByParent = wo.data.dependsOnWorkOrderIds.some((parentId) => {
-          const parentUpdated = updatedMap.get(parentId);
-          return parentUpdated && toMs(parentUpdated.data.endDate) > toMs(wo.data.startDate);
-        });
-        reasons.push(pushedByParent ? "pushed by parent dependency" : "work center conflict or shift adjustment");
+        const pushedByParent = wo.data.dependsOnWorkOrderIds.some(
+          (parentId) => {
+            const parentUpdated = updatedMap.get(parentId);
+            return (
+              parentUpdated &&
+              toMs(parentUpdated.data.endDate) > toMs(wo.data.startDate)
+            );
+          },
+        );
+        reasons.push(
+          pushedByParent
+            ? "pushed by parent dependency"
+            : "work center conflict or shift adjustment",
+        );
       }
 
       changes.push({
@@ -168,15 +198,27 @@ export class ReflowService {
     return changes;
   }
 
-  private computeMetrics(original: WorkOrder[], updated: WorkOrder[]): ReflowResult["metrics"] {
+  private computeMetrics(
+    original: WorkOrder[],
+    updated: WorkOrder[],
+  ): ReflowResult["metrics"] {
     const totalDelayMinutes = updated.reduce((sum, wo) => {
       const orig = original.find((o) => o.docId === wo.docId)!;
-      return sum + Math.max(0, minutesBetween(toMs(orig.data.endDate), toMs(wo.data.endDate)));
+      return (
+        sum +
+        Math.max(
+          0,
+          minutesBetween(toMs(orig.data.endDate), toMs(wo.data.endDate)),
+        )
+      );
     }, 0);
 
     const affectedWorkOrders = updated.filter((wo) => {
       const orig = original.find((o) => o.docId === wo.docId)!;
-      return wo.data.startDate !== orig.data.startDate || wo.data.endDate !== orig.data.endDate;
+      return (
+        wo.data.startDate !== orig.data.startDate ||
+        wo.data.endDate !== orig.data.endDate
+      );
     }).length;
 
     return {
