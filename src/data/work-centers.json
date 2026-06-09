@@ -1,0 +1,359 @@
+[
+  {
+    "docId": "WC-EXT-01",
+    "docType": "workCenter",
+    "data": {
+      "name": "Extrusion Line 1",
+      "shifts": [
+        {
+          "dayOfWeek": 1,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 2,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 3,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 4,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 5,
+          "startHour": 8,
+          "endHour": 17
+        }
+      ],
+      "maintenanceWindows": [
+        {
+          "startDate": "2023-10-18T10:00:00.000Z",
+          "endDate": "2023-10-18T11:00:00.000Z",
+          "reason": "Weekly lubrication"
+        }
+      ]
+    }
+  },
+  {
+    "docId": "WC-EXT-02",
+    "docType": "workCenter",
+    "data": {
+      "name": "Extrusion Line 2",
+      "shifts": [
+        {
+          "dayOfWeek": 1,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 2,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 3,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 4,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 5,
+          "startHour": 8,
+          "endHour": 17
+        }
+      ],
+      "maintenanceWindows": [
+        {
+          "startDate": "2023-10-25T14:00:00.000Z",
+          "endDate": "2023-10-25T15:00:00.000Z",
+          "reason": "Filter replacement"
+        }
+      ]
+    }
+  },
+  {
+    "docId": "WC-CUT-01",
+    "docType": "workCenter",
+    "data": {
+      "name": "Cutting Station 1",
+      "shifts": [
+        {
+          "dayOfWeek": 1,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 2,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 3,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 4,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 5,
+          "startHour": 8,
+          "endHour": 17
+        }
+      ],
+      "maintenanceWindows": [
+        {
+          "startDate": "2023-10-19T09:00:00.000Z",
+          "endDate": "2023-10-19T10:00:00.000Z",
+          "reason": "Blade sharpening"
+        }
+      ]
+    }
+  },
+  {
+    "docId": "WC-CUT-02",
+    "docType": "workCenter",
+    "data": {
+      "name": "Cutting Station 2",
+      "shifts": [
+        {
+          "dayOfWeek": 1,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 2,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 3,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 4,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 5,
+          "startHour": 8,
+          "endHour": 17
+        }
+      ],
+      "maintenanceWindows": [
+        {
+          "startDate": "2023-10-26T09:00:00.000Z",
+          "endDate": "2023-10-26T10:30:00.000Z",
+          "reason": "Blade replacement"
+        }
+      ]
+    }
+  },
+  {
+    "docId": "WC-WELD-01",
+    "docType": "workCenter",
+    "data": {
+      "name": "Welding Station",
+      "shifts": [
+        {
+          "dayOfWeek": 1,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 2,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 3,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 4,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 5,
+          "startHour": 8,
+          "endHour": 17
+        }
+      ],
+      "maintenanceWindows": [
+        {
+          "startDate": "2023-10-20T12:00:00.000Z",
+          "endDate": "2023-10-20T13:00:00.000Z",
+          "reason": "Gas cylinder swap"
+        }
+      ]
+    }
+  },
+  {
+    "docId": "WC-PAINT-01",
+    "docType": "workCenter",
+    "data": {
+      "name": "Painting Line",
+      "shifts": [
+        {
+          "dayOfWeek": 1,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 2,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 3,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 4,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 5,
+          "startHour": 8,
+          "endHour": 17
+        }
+      ],
+      "maintenanceWindows": [
+        {
+          "startDate": "2023-10-24T08:00:00.000Z",
+          "endDate": "2023-10-24T09:30:00.000Z",
+          "reason": "Paint tank cleaning"
+        }
+      ]
+    }
+  },
+  {
+    "docId": "WC-QC-01",
+    "docType": "workCenter",
+    "data": {
+      "name": "Quality Control",
+      "shifts": [
+        {
+          "dayOfWeek": 1,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 2,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 3,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 4,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 5,
+          "startHour": 8,
+          "endHour": 17
+        }
+      ],
+      "maintenanceWindows": []
+    }
+  },
+  {
+    "docId": "WC-PACK-01",
+    "docType": "workCenter",
+    "data": {
+      "name": "Packaging Line 1",
+      "shifts": [
+        {
+          "dayOfWeek": 1,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 2,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 3,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 4,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 5,
+          "startHour": 8,
+          "endHour": 17
+        }
+      ],
+      "maintenanceWindows": [
+        {
+          "startDate": "2023-10-27T15:00:00.000Z",
+          "endDate": "2023-10-27T16:00:00.000Z",
+          "reason": "Conveyor maintenance"
+        }
+      ]
+    }
+  },
+  {
+    "docId": "WC-PACK-02",
+    "docType": "workCenter",
+    "data": {
+      "name": "Packaging Line 2",
+      "shifts": [
+        {
+          "dayOfWeek": 1,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 2,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 3,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 4,
+          "startHour": 8,
+          "endHour": 17
+        },
+        {
+          "dayOfWeek": 5,
+          "startHour": 8,
+          "endHour": 17
+        }
+      ],
+      "maintenanceWindows": []
+    }
+  }
+]

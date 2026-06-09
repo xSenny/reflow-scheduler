@@ -1,0 +1,22 @@
+{
+  "name": "reflow-scheduler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "demo": "tsx src/index.ts",
+    "test": "tsx src/tests/data-test.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/luxon": "^3.7.1",
+    "@types/node": "^25.9.1",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "luxon": "^3.7.2"
+  }
+}

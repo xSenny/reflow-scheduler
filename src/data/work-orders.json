@@ -1,0 +1,7104 @@
+[
+  {
+    "docId": "WO-001",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-001",
+      "manufacturingOrderId": "MO-100",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-16T08:00:00.000Z",
+      "endDate": "2023-10-16T10:00:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-002",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-002",
+      "manufacturingOrderId": "MO-100",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-16T10:00:00.000Z",
+      "endDate": "2023-10-16T11:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-001"
+      ]
+    }
+  },
+  {
+    "docId": "WO-003",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-003",
+      "manufacturingOrderId": "MO-100",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-16T11:00:00.000Z",
+      "endDate": "2023-10-16T12:30:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-002"
+      ]
+    }
+  },
+  {
+    "docId": "WO-004",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-004",
+      "manufacturingOrderId": "MO-100",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-16T12:30:00.000Z",
+      "endDate": "2023-10-16T13:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-003"
+      ]
+    }
+  },
+  {
+    "docId": "WO-005",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-005",
+      "manufacturingOrderId": "MO-100",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-16T13:30:00.000Z",
+      "endDate": "2023-10-16T14:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-004"
+      ]
+    }
+  },
+  {
+    "docId": "WO-006",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-006",
+      "manufacturingOrderId": "MO-100",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-16T14:00:00.000Z",
+      "endDate": "2023-10-16T14:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-005"
+      ]
+    }
+  },
+  {
+    "docId": "WO-007",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-007",
+      "manufacturingOrderId": "MO-101",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-16T08:30:00.000Z",
+      "endDate": "2023-10-16T11:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-008",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-008",
+      "manufacturingOrderId": "MO-101",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-16T11:30:00.000Z",
+      "endDate": "2023-10-16T13:00:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-007"
+      ]
+    }
+  },
+  {
+    "docId": "WO-009",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-009",
+      "manufacturingOrderId": "MO-101",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-16T13:00:00.000Z",
+      "endDate": "2023-10-16T14:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-008"
+      ]
+    }
+  },
+  {
+    "docId": "WO-010",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-010",
+      "manufacturingOrderId": "MO-101",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-16T14:00:00.000Z",
+      "endDate": "2023-10-16T14:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-009"
+      ]
+    }
+  },
+  {
+    "docId": "WO-011",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-011",
+      "manufacturingOrderId": "MO-101",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-16T14:30:00.000Z",
+      "endDate": "2023-10-16T15:15:00.000Z",
+      "durationMinutes": 45,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-010"
+      ]
+    }
+  },
+  {
+    "docId": "WO-012",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-012",
+      "manufacturingOrderId": "MO-102",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-16T09:00:00.000Z",
+      "endDate": "2023-10-16T10:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-013",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-013",
+      "manufacturingOrderId": "MO-102",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-16T10:00:00.000Z",
+      "endDate": "2023-10-16T10:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-012"
+      ]
+    }
+  },
+  {
+    "docId": "WO-014",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-014",
+      "manufacturingOrderId": "MO-102",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-16T10:30:00.000Z",
+      "endDate": "2023-10-16T11:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-013"
+      ]
+    }
+  },
+  {
+    "docId": "WO-015",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-015",
+      "manufacturingOrderId": "MO-102",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-16T11:00:00.000Z",
+      "endDate": "2023-10-16T11:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-014"
+      ]
+    }
+  },
+  {
+    "docId": "WO-016",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-016",
+      "manufacturingOrderId": "MO-103",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-16T09:30:00.000Z",
+      "endDate": "2023-10-16T13:30:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-017",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-017",
+      "manufacturingOrderId": "MO-103",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-16T13:30:00.000Z",
+      "endDate": "2023-10-16T15:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-016"
+      ]
+    }
+  },
+  {
+    "docId": "WO-018",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-018",
+      "manufacturingOrderId": "MO-103",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-16T15:30:00.000Z",
+      "endDate": "2023-10-16T18:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-017"
+      ]
+    }
+  },
+  {
+    "docId": "WO-019",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-019",
+      "manufacturingOrderId": "MO-103",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-16T18:30:00.000Z",
+      "endDate": "2023-10-16T20:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-018"
+      ]
+    }
+  },
+  {
+    "docId": "WO-020",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-020",
+      "manufacturingOrderId": "MO-103",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-16T20:30:00.000Z",
+      "endDate": "2023-10-16T21:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-019"
+      ]
+    }
+  },
+  {
+    "docId": "WO-021",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-021",
+      "manufacturingOrderId": "MO-103",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-16T21:30:00.000Z",
+      "endDate": "2023-10-16T22:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-020"
+      ]
+    }
+  },
+  {
+    "docId": "WO-022",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-022",
+      "manufacturingOrderId": "MO-104",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-16T10:00:00.000Z",
+      "endDate": "2023-10-16T12:00:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-023",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-023",
+      "manufacturingOrderId": "MO-104",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-16T12:00:00.000Z",
+      "endDate": "2023-10-16T13:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-022"
+      ]
+    }
+  },
+  {
+    "docId": "WO-024",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-024",
+      "manufacturingOrderId": "MO-104",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-16T13:00:00.000Z",
+      "endDate": "2023-10-16T14:30:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-023"
+      ]
+    }
+  },
+  {
+    "docId": "WO-025",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-025",
+      "manufacturingOrderId": "MO-104",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-16T14:30:00.000Z",
+      "endDate": "2023-10-16T15:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-024"
+      ]
+    }
+  },
+  {
+    "docId": "WO-026",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-026",
+      "manufacturingOrderId": "MO-104",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-16T15:30:00.000Z",
+      "endDate": "2023-10-16T16:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-025"
+      ]
+    }
+  },
+  {
+    "docId": "WO-027",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-027",
+      "manufacturingOrderId": "MO-104",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-16T16:00:00.000Z",
+      "endDate": "2023-10-16T16:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-026"
+      ]
+    }
+  },
+  {
+    "docId": "WO-028",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-028",
+      "manufacturingOrderId": "MO-105",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-16T10:30:00.000Z",
+      "endDate": "2023-10-16T13:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-029",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-029",
+      "manufacturingOrderId": "MO-105",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-16T13:30:00.000Z",
+      "endDate": "2023-10-16T15:00:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-028"
+      ]
+    }
+  },
+  {
+    "docId": "WO-030",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-030",
+      "manufacturingOrderId": "MO-105",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-16T15:00:00.000Z",
+      "endDate": "2023-10-16T16:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-029"
+      ]
+    }
+  },
+  {
+    "docId": "WO-031",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-031",
+      "manufacturingOrderId": "MO-105",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-16T16:00:00.000Z",
+      "endDate": "2023-10-16T16:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-030"
+      ]
+    }
+  },
+  {
+    "docId": "WO-032",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-032",
+      "manufacturingOrderId": "MO-105",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-16T16:30:00.000Z",
+      "endDate": "2023-10-16T17:15:00.000Z",
+      "durationMinutes": 45,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-031"
+      ]
+    }
+  },
+  {
+    "docId": "WO-033",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-033",
+      "manufacturingOrderId": "MO-106",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-17T08:00:00.000Z",
+      "endDate": "2023-10-17T09:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-034",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-034",
+      "manufacturingOrderId": "MO-106",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-17T09:00:00.000Z",
+      "endDate": "2023-10-17T09:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-033"
+      ]
+    }
+  },
+  {
+    "docId": "WO-035",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-035",
+      "manufacturingOrderId": "MO-106",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-17T09:30:00.000Z",
+      "endDate": "2023-10-17T10:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-034"
+      ]
+    }
+  },
+  {
+    "docId": "WO-036",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-036",
+      "manufacturingOrderId": "MO-106",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-17T10:00:00.000Z",
+      "endDate": "2023-10-17T10:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-035"
+      ]
+    }
+  },
+  {
+    "docId": "WO-037",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-037",
+      "manufacturingOrderId": "MO-107",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-17T08:30:00.000Z",
+      "endDate": "2023-10-17T12:30:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-038",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-038",
+      "manufacturingOrderId": "MO-107",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-17T12:30:00.000Z",
+      "endDate": "2023-10-17T14:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-037"
+      ]
+    }
+  },
+  {
+    "docId": "WO-039",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-039",
+      "manufacturingOrderId": "MO-107",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-17T14:30:00.000Z",
+      "endDate": "2023-10-17T17:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-038"
+      ]
+    }
+  },
+  {
+    "docId": "WO-040",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-040",
+      "manufacturingOrderId": "MO-107",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-17T17:30:00.000Z",
+      "endDate": "2023-10-17T19:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-039"
+      ]
+    }
+  },
+  {
+    "docId": "WO-041",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-041",
+      "manufacturingOrderId": "MO-107",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-17T19:30:00.000Z",
+      "endDate": "2023-10-17T20:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-040"
+      ]
+    }
+  },
+  {
+    "docId": "WO-042",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-042",
+      "manufacturingOrderId": "MO-107",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-17T20:30:00.000Z",
+      "endDate": "2023-10-17T21:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-041"
+      ]
+    }
+  },
+  {
+    "docId": "WO-043",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-043",
+      "manufacturingOrderId": "MO-108",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-17T09:00:00.000Z",
+      "endDate": "2023-10-17T11:00:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-044",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-044",
+      "manufacturingOrderId": "MO-108",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-17T11:00:00.000Z",
+      "endDate": "2023-10-17T12:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-043"
+      ]
+    }
+  },
+  {
+    "docId": "WO-045",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-045",
+      "manufacturingOrderId": "MO-108",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-17T12:00:00.000Z",
+      "endDate": "2023-10-17T13:30:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-044"
+      ]
+    }
+  },
+  {
+    "docId": "WO-046",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-046",
+      "manufacturingOrderId": "MO-108",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-17T13:30:00.000Z",
+      "endDate": "2023-10-17T14:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-045"
+      ]
+    }
+  },
+  {
+    "docId": "WO-047",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-047",
+      "manufacturingOrderId": "MO-108",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-17T14:30:00.000Z",
+      "endDate": "2023-10-17T15:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-046"
+      ]
+    }
+  },
+  {
+    "docId": "WO-048",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-048",
+      "manufacturingOrderId": "MO-108",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-17T15:00:00.000Z",
+      "endDate": "2023-10-17T15:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-047"
+      ]
+    }
+  },
+  {
+    "docId": "WO-049",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-049",
+      "manufacturingOrderId": "MO-109",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-17T09:30:00.000Z",
+      "endDate": "2023-10-17T12:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-050",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-050",
+      "manufacturingOrderId": "MO-109",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-17T12:30:00.000Z",
+      "endDate": "2023-10-17T14:00:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-049"
+      ]
+    }
+  },
+  {
+    "docId": "WO-051",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-051",
+      "manufacturingOrderId": "MO-109",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-17T14:00:00.000Z",
+      "endDate": "2023-10-17T15:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-050"
+      ]
+    }
+  },
+  {
+    "docId": "WO-052",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-052",
+      "manufacturingOrderId": "MO-109",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-17T15:00:00.000Z",
+      "endDate": "2023-10-17T15:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-051"
+      ]
+    }
+  },
+  {
+    "docId": "WO-053",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-053",
+      "manufacturingOrderId": "MO-109",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-17T15:30:00.000Z",
+      "endDate": "2023-10-17T16:15:00.000Z",
+      "durationMinutes": 45,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-052"
+      ]
+    }
+  },
+  {
+    "docId": "WO-054",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-054",
+      "manufacturingOrderId": "MO-110",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-17T10:00:00.000Z",
+      "endDate": "2023-10-17T11:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-055",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-055",
+      "manufacturingOrderId": "MO-110",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-17T11:00:00.000Z",
+      "endDate": "2023-10-17T11:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-054"
+      ]
+    }
+  },
+  {
+    "docId": "WO-056",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-056",
+      "manufacturingOrderId": "MO-110",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-17T11:30:00.000Z",
+      "endDate": "2023-10-17T12:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-055"
+      ]
+    }
+  },
+  {
+    "docId": "WO-057",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-057",
+      "manufacturingOrderId": "MO-110",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-17T12:00:00.000Z",
+      "endDate": "2023-10-17T12:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-056"
+      ]
+    }
+  },
+  {
+    "docId": "WO-058",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-058",
+      "manufacturingOrderId": "MO-111",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-17T10:30:00.000Z",
+      "endDate": "2023-10-17T14:30:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-059",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-059",
+      "manufacturingOrderId": "MO-111",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-17T14:30:00.000Z",
+      "endDate": "2023-10-17T16:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-058"
+      ]
+    }
+  },
+  {
+    "docId": "WO-060",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-060",
+      "manufacturingOrderId": "MO-111",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-17T16:30:00.000Z",
+      "endDate": "2023-10-17T19:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-059"
+      ]
+    }
+  },
+  {
+    "docId": "WO-061",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-061",
+      "manufacturingOrderId": "MO-111",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-17T19:30:00.000Z",
+      "endDate": "2023-10-17T21:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-060"
+      ]
+    }
+  },
+  {
+    "docId": "WO-062",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-062",
+      "manufacturingOrderId": "MO-111",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-17T21:30:00.000Z",
+      "endDate": "2023-10-17T22:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-061"
+      ]
+    }
+  },
+  {
+    "docId": "WO-063",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-063",
+      "manufacturingOrderId": "MO-111",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-17T22:30:00.000Z",
+      "endDate": "2023-10-17T23:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-062"
+      ]
+    }
+  },
+  {
+    "docId": "WO-064",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-064",
+      "manufacturingOrderId": "MO-112",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-18T08:00:00.000Z",
+      "endDate": "2023-10-18T10:00:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-065",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-065",
+      "manufacturingOrderId": "MO-112",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-18T10:00:00.000Z",
+      "endDate": "2023-10-18T11:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-064"
+      ]
+    }
+  },
+  {
+    "docId": "WO-066",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-066",
+      "manufacturingOrderId": "MO-112",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-18T11:00:00.000Z",
+      "endDate": "2023-10-18T12:30:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-065"
+      ]
+    }
+  },
+  {
+    "docId": "WO-067",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-067",
+      "manufacturingOrderId": "MO-112",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-18T12:30:00.000Z",
+      "endDate": "2023-10-18T13:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-066"
+      ]
+    }
+  },
+  {
+    "docId": "WO-068",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-068",
+      "manufacturingOrderId": "MO-112",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-18T13:30:00.000Z",
+      "endDate": "2023-10-18T14:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-067"
+      ]
+    }
+  },
+  {
+    "docId": "WO-069",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-069",
+      "manufacturingOrderId": "MO-112",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-18T14:00:00.000Z",
+      "endDate": "2023-10-18T14:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-068"
+      ]
+    }
+  },
+  {
+    "docId": "WO-070",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-070",
+      "manufacturingOrderId": "MO-113",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-18T08:30:00.000Z",
+      "endDate": "2023-10-18T11:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-071",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-071",
+      "manufacturingOrderId": "MO-113",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-18T11:30:00.000Z",
+      "endDate": "2023-10-18T13:00:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-070"
+      ]
+    }
+  },
+  {
+    "docId": "WO-072",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-072",
+      "manufacturingOrderId": "MO-113",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-18T13:00:00.000Z",
+      "endDate": "2023-10-18T14:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-071"
+      ]
+    }
+  },
+  {
+    "docId": "WO-073",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-073",
+      "manufacturingOrderId": "MO-113",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-18T14:00:00.000Z",
+      "endDate": "2023-10-18T14:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-072"
+      ]
+    }
+  },
+  {
+    "docId": "WO-074",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-074",
+      "manufacturingOrderId": "MO-113",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-18T14:30:00.000Z",
+      "endDate": "2023-10-18T15:15:00.000Z",
+      "durationMinutes": 45,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-073"
+      ]
+    }
+  },
+  {
+    "docId": "WO-075",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-075",
+      "manufacturingOrderId": "MO-114",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-18T09:00:00.000Z",
+      "endDate": "2023-10-18T10:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-076",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-076",
+      "manufacturingOrderId": "MO-114",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-18T10:00:00.000Z",
+      "endDate": "2023-10-18T10:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-075"
+      ]
+    }
+  },
+  {
+    "docId": "WO-077",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-077",
+      "manufacturingOrderId": "MO-114",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-18T10:30:00.000Z",
+      "endDate": "2023-10-18T11:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-076"
+      ]
+    }
+  },
+  {
+    "docId": "WO-078",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-078",
+      "manufacturingOrderId": "MO-114",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-18T11:00:00.000Z",
+      "endDate": "2023-10-18T11:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-077"
+      ]
+    }
+  },
+  {
+    "docId": "WO-079",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-079",
+      "manufacturingOrderId": "MO-115",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-18T09:30:00.000Z",
+      "endDate": "2023-10-18T13:30:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-080",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-080",
+      "manufacturingOrderId": "MO-115",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-18T13:30:00.000Z",
+      "endDate": "2023-10-18T15:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-079"
+      ]
+    }
+  },
+  {
+    "docId": "WO-081",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-081",
+      "manufacturingOrderId": "MO-115",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-18T15:30:00.000Z",
+      "endDate": "2023-10-18T18:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-080"
+      ]
+    }
+  },
+  {
+    "docId": "WO-082",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-082",
+      "manufacturingOrderId": "MO-115",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-18T18:30:00.000Z",
+      "endDate": "2023-10-18T20:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-081"
+      ]
+    }
+  },
+  {
+    "docId": "WO-083",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-083",
+      "manufacturingOrderId": "MO-115",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-18T20:30:00.000Z",
+      "endDate": "2023-10-18T21:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-082"
+      ]
+    }
+  },
+  {
+    "docId": "WO-084",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-084",
+      "manufacturingOrderId": "MO-115",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-18T21:30:00.000Z",
+      "endDate": "2023-10-18T22:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-083"
+      ]
+    }
+  },
+  {
+    "docId": "WO-085",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-085",
+      "manufacturingOrderId": "MO-116",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-18T10:00:00.000Z",
+      "endDate": "2023-10-18T12:00:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-086",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-086",
+      "manufacturingOrderId": "MO-116",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-18T12:00:00.000Z",
+      "endDate": "2023-10-18T13:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-085"
+      ]
+    }
+  },
+  {
+    "docId": "WO-087",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-087",
+      "manufacturingOrderId": "MO-116",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-18T13:00:00.000Z",
+      "endDate": "2023-10-18T14:30:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-086"
+      ]
+    }
+  },
+  {
+    "docId": "WO-088",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-088",
+      "manufacturingOrderId": "MO-116",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-18T14:30:00.000Z",
+      "endDate": "2023-10-18T15:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-087"
+      ]
+    }
+  },
+  {
+    "docId": "WO-089",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-089",
+      "manufacturingOrderId": "MO-116",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-18T15:30:00.000Z",
+      "endDate": "2023-10-18T16:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-088"
+      ]
+    }
+  },
+  {
+    "docId": "WO-090",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-090",
+      "manufacturingOrderId": "MO-116",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-18T16:00:00.000Z",
+      "endDate": "2023-10-18T16:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-089"
+      ]
+    }
+  },
+  {
+    "docId": "WO-091",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-091",
+      "manufacturingOrderId": "MO-117",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-18T10:30:00.000Z",
+      "endDate": "2023-10-18T13:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-092",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-092",
+      "manufacturingOrderId": "MO-117",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-18T13:30:00.000Z",
+      "endDate": "2023-10-18T15:00:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-091"
+      ]
+    }
+  },
+  {
+    "docId": "WO-093",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-093",
+      "manufacturingOrderId": "MO-117",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-18T15:00:00.000Z",
+      "endDate": "2023-10-18T16:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-092"
+      ]
+    }
+  },
+  {
+    "docId": "WO-094",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-094",
+      "manufacturingOrderId": "MO-117",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-18T16:00:00.000Z",
+      "endDate": "2023-10-18T16:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-093"
+      ]
+    }
+  },
+  {
+    "docId": "WO-095",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-095",
+      "manufacturingOrderId": "MO-117",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-18T16:30:00.000Z",
+      "endDate": "2023-10-18T17:15:00.000Z",
+      "durationMinutes": 45,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-094"
+      ]
+    }
+  },
+  {
+    "docId": "WO-096",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-096",
+      "manufacturingOrderId": "MO-118",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-19T08:00:00.000Z",
+      "endDate": "2023-10-19T09:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-097",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-097",
+      "manufacturingOrderId": "MO-118",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-19T09:00:00.000Z",
+      "endDate": "2023-10-19T09:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-096"
+      ]
+    }
+  },
+  {
+    "docId": "WO-098",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-098",
+      "manufacturingOrderId": "MO-118",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-19T09:30:00.000Z",
+      "endDate": "2023-10-19T10:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-097"
+      ]
+    }
+  },
+  {
+    "docId": "WO-099",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-099",
+      "manufacturingOrderId": "MO-118",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-19T10:00:00.000Z",
+      "endDate": "2023-10-19T10:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-098"
+      ]
+    }
+  },
+  {
+    "docId": "WO-100",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-100",
+      "manufacturingOrderId": "MO-119",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-19T08:30:00.000Z",
+      "endDate": "2023-10-19T12:30:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-101",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-101",
+      "manufacturingOrderId": "MO-119",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-19T12:30:00.000Z",
+      "endDate": "2023-10-19T14:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-100"
+      ]
+    }
+  },
+  {
+    "docId": "WO-102",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-102",
+      "manufacturingOrderId": "MO-119",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-19T14:30:00.000Z",
+      "endDate": "2023-10-19T17:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-101"
+      ]
+    }
+  },
+  {
+    "docId": "WO-103",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-103",
+      "manufacturingOrderId": "MO-119",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-19T17:30:00.000Z",
+      "endDate": "2023-10-19T19:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-102"
+      ]
+    }
+  },
+  {
+    "docId": "WO-104",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-104",
+      "manufacturingOrderId": "MO-119",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-19T19:30:00.000Z",
+      "endDate": "2023-10-19T20:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-103"
+      ]
+    }
+  },
+  {
+    "docId": "WO-105",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-105",
+      "manufacturingOrderId": "MO-119",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-19T20:30:00.000Z",
+      "endDate": "2023-10-19T21:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-104"
+      ]
+    }
+  },
+  {
+    "docId": "WO-106",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-106",
+      "manufacturingOrderId": "MO-120",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-19T09:00:00.000Z",
+      "endDate": "2023-10-19T11:00:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-107",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-107",
+      "manufacturingOrderId": "MO-120",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-19T11:00:00.000Z",
+      "endDate": "2023-10-19T12:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-106"
+      ]
+    }
+  },
+  {
+    "docId": "WO-108",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-108",
+      "manufacturingOrderId": "MO-120",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-19T12:00:00.000Z",
+      "endDate": "2023-10-19T13:30:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-107"
+      ]
+    }
+  },
+  {
+    "docId": "WO-109",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-109",
+      "manufacturingOrderId": "MO-120",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-19T13:30:00.000Z",
+      "endDate": "2023-10-19T14:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-108"
+      ]
+    }
+  },
+  {
+    "docId": "WO-110",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-110",
+      "manufacturingOrderId": "MO-120",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-19T14:30:00.000Z",
+      "endDate": "2023-10-19T15:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-109"
+      ]
+    }
+  },
+  {
+    "docId": "WO-111",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-111",
+      "manufacturingOrderId": "MO-120",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-19T15:00:00.000Z",
+      "endDate": "2023-10-19T15:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-110"
+      ]
+    }
+  },
+  {
+    "docId": "WO-112",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-112",
+      "manufacturingOrderId": "MO-121",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-19T09:30:00.000Z",
+      "endDate": "2023-10-19T12:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-113",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-113",
+      "manufacturingOrderId": "MO-121",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-19T12:30:00.000Z",
+      "endDate": "2023-10-19T14:00:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-112"
+      ]
+    }
+  },
+  {
+    "docId": "WO-114",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-114",
+      "manufacturingOrderId": "MO-121",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-19T14:00:00.000Z",
+      "endDate": "2023-10-19T15:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-113"
+      ]
+    }
+  },
+  {
+    "docId": "WO-115",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-115",
+      "manufacturingOrderId": "MO-121",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-19T15:00:00.000Z",
+      "endDate": "2023-10-19T15:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-114"
+      ]
+    }
+  },
+  {
+    "docId": "WO-116",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-116",
+      "manufacturingOrderId": "MO-121",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-19T15:30:00.000Z",
+      "endDate": "2023-10-19T16:15:00.000Z",
+      "durationMinutes": 45,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-115"
+      ]
+    }
+  },
+  {
+    "docId": "WO-117",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-117",
+      "manufacturingOrderId": "MO-122",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-19T10:00:00.000Z",
+      "endDate": "2023-10-19T11:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-118",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-118",
+      "manufacturingOrderId": "MO-122",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-19T11:00:00.000Z",
+      "endDate": "2023-10-19T11:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-117"
+      ]
+    }
+  },
+  {
+    "docId": "WO-119",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-119",
+      "manufacturingOrderId": "MO-122",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-19T11:30:00.000Z",
+      "endDate": "2023-10-19T12:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-118"
+      ]
+    }
+  },
+  {
+    "docId": "WO-120",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-120",
+      "manufacturingOrderId": "MO-122",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-19T12:00:00.000Z",
+      "endDate": "2023-10-19T12:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-119"
+      ]
+    }
+  },
+  {
+    "docId": "WO-121",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-121",
+      "manufacturingOrderId": "MO-123",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-19T10:30:00.000Z",
+      "endDate": "2023-10-19T14:30:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-122",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-122",
+      "manufacturingOrderId": "MO-123",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-19T14:30:00.000Z",
+      "endDate": "2023-10-19T16:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-121"
+      ]
+    }
+  },
+  {
+    "docId": "WO-123",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-123",
+      "manufacturingOrderId": "MO-123",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-19T16:30:00.000Z",
+      "endDate": "2023-10-19T19:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-122"
+      ]
+    }
+  },
+  {
+    "docId": "WO-124",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-124",
+      "manufacturingOrderId": "MO-123",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-19T19:30:00.000Z",
+      "endDate": "2023-10-19T21:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-123"
+      ]
+    }
+  },
+  {
+    "docId": "WO-125",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-125",
+      "manufacturingOrderId": "MO-123",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-19T21:30:00.000Z",
+      "endDate": "2023-10-19T22:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-124"
+      ]
+    }
+  },
+  {
+    "docId": "WO-126",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-126",
+      "manufacturingOrderId": "MO-123",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-19T22:30:00.000Z",
+      "endDate": "2023-10-19T23:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-125"
+      ]
+    }
+  },
+  {
+    "docId": "WO-127",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-127",
+      "manufacturingOrderId": "MO-124",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-20T08:00:00.000Z",
+      "endDate": "2023-10-20T10:00:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-128",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-128",
+      "manufacturingOrderId": "MO-124",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-20T10:00:00.000Z",
+      "endDate": "2023-10-20T11:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-127"
+      ]
+    }
+  },
+  {
+    "docId": "WO-129",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-129",
+      "manufacturingOrderId": "MO-124",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-20T11:00:00.000Z",
+      "endDate": "2023-10-20T12:30:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-128"
+      ]
+    }
+  },
+  {
+    "docId": "WO-130",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-130",
+      "manufacturingOrderId": "MO-124",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-20T12:30:00.000Z",
+      "endDate": "2023-10-20T13:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-129"
+      ]
+    }
+  },
+  {
+    "docId": "WO-131",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-131",
+      "manufacturingOrderId": "MO-124",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-20T13:30:00.000Z",
+      "endDate": "2023-10-20T14:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-130"
+      ]
+    }
+  },
+  {
+    "docId": "WO-132",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-132",
+      "manufacturingOrderId": "MO-124",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-20T14:00:00.000Z",
+      "endDate": "2023-10-20T14:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-131"
+      ]
+    }
+  },
+  {
+    "docId": "WO-133",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-133",
+      "manufacturingOrderId": "MO-125",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-20T08:30:00.000Z",
+      "endDate": "2023-10-20T11:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-134",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-134",
+      "manufacturingOrderId": "MO-125",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-20T11:30:00.000Z",
+      "endDate": "2023-10-20T13:00:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-133"
+      ]
+    }
+  },
+  {
+    "docId": "WO-135",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-135",
+      "manufacturingOrderId": "MO-125",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-20T13:00:00.000Z",
+      "endDate": "2023-10-20T14:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-134"
+      ]
+    }
+  },
+  {
+    "docId": "WO-136",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-136",
+      "manufacturingOrderId": "MO-125",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-20T14:00:00.000Z",
+      "endDate": "2023-10-20T14:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-135"
+      ]
+    }
+  },
+  {
+    "docId": "WO-137",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-137",
+      "manufacturingOrderId": "MO-125",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-20T14:30:00.000Z",
+      "endDate": "2023-10-20T15:15:00.000Z",
+      "durationMinutes": 45,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-136"
+      ]
+    }
+  },
+  {
+    "docId": "WO-138",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-138",
+      "manufacturingOrderId": "MO-126",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-20T09:00:00.000Z",
+      "endDate": "2023-10-20T10:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-139",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-139",
+      "manufacturingOrderId": "MO-126",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-20T10:00:00.000Z",
+      "endDate": "2023-10-20T10:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-138"
+      ]
+    }
+  },
+  {
+    "docId": "WO-140",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-140",
+      "manufacturingOrderId": "MO-126",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-20T10:30:00.000Z",
+      "endDate": "2023-10-20T11:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-139"
+      ]
+    }
+  },
+  {
+    "docId": "WO-141",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-141",
+      "manufacturingOrderId": "MO-126",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-20T11:00:00.000Z",
+      "endDate": "2023-10-20T11:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-140"
+      ]
+    }
+  },
+  {
+    "docId": "WO-142",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-142",
+      "manufacturingOrderId": "MO-127",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-20T09:30:00.000Z",
+      "endDate": "2023-10-20T13:30:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-143",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-143",
+      "manufacturingOrderId": "MO-127",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-20T13:30:00.000Z",
+      "endDate": "2023-10-20T15:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-142"
+      ]
+    }
+  },
+  {
+    "docId": "WO-144",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-144",
+      "manufacturingOrderId": "MO-127",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-20T15:30:00.000Z",
+      "endDate": "2023-10-20T18:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-143"
+      ]
+    }
+  },
+  {
+    "docId": "WO-145",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-145",
+      "manufacturingOrderId": "MO-127",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-20T18:30:00.000Z",
+      "endDate": "2023-10-20T20:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-144"
+      ]
+    }
+  },
+  {
+    "docId": "WO-146",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-146",
+      "manufacturingOrderId": "MO-127",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-20T20:30:00.000Z",
+      "endDate": "2023-10-20T21:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-145"
+      ]
+    }
+  },
+  {
+    "docId": "WO-147",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-147",
+      "manufacturingOrderId": "MO-127",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-20T21:30:00.000Z",
+      "endDate": "2023-10-20T22:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-146"
+      ]
+    }
+  },
+  {
+    "docId": "WO-148",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-148",
+      "manufacturingOrderId": "MO-128",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-20T10:00:00.000Z",
+      "endDate": "2023-10-20T12:00:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-149",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-149",
+      "manufacturingOrderId": "MO-128",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-20T12:00:00.000Z",
+      "endDate": "2023-10-20T13:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-148"
+      ]
+    }
+  },
+  {
+    "docId": "WO-150",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-150",
+      "manufacturingOrderId": "MO-128",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-20T13:00:00.000Z",
+      "endDate": "2023-10-20T14:30:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-149"
+      ]
+    }
+  },
+  {
+    "docId": "WO-151",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-151",
+      "manufacturingOrderId": "MO-128",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-20T14:30:00.000Z",
+      "endDate": "2023-10-20T15:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-150"
+      ]
+    }
+  },
+  {
+    "docId": "WO-152",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-152",
+      "manufacturingOrderId": "MO-128",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-20T15:30:00.000Z",
+      "endDate": "2023-10-20T16:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-151"
+      ]
+    }
+  },
+  {
+    "docId": "WO-153",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-153",
+      "manufacturingOrderId": "MO-128",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-20T16:00:00.000Z",
+      "endDate": "2023-10-20T16:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-152"
+      ]
+    }
+  },
+  {
+    "docId": "WO-154",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-154",
+      "manufacturingOrderId": "MO-129",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-20T10:30:00.000Z",
+      "endDate": "2023-10-20T13:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-155",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-155",
+      "manufacturingOrderId": "MO-129",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-20T13:30:00.000Z",
+      "endDate": "2023-10-20T15:00:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-154"
+      ]
+    }
+  },
+  {
+    "docId": "WO-156",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-156",
+      "manufacturingOrderId": "MO-129",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-20T15:00:00.000Z",
+      "endDate": "2023-10-20T16:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-155"
+      ]
+    }
+  },
+  {
+    "docId": "WO-157",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-157",
+      "manufacturingOrderId": "MO-129",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-20T16:00:00.000Z",
+      "endDate": "2023-10-20T16:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-156"
+      ]
+    }
+  },
+  {
+    "docId": "WO-158",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-158",
+      "manufacturingOrderId": "MO-129",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-20T16:30:00.000Z",
+      "endDate": "2023-10-20T17:15:00.000Z",
+      "durationMinutes": 45,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-157"
+      ]
+    }
+  },
+  {
+    "docId": "WO-159",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-159",
+      "manufacturingOrderId": "MO-130",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-23T08:00:00.000Z",
+      "endDate": "2023-10-23T09:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-160",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-160",
+      "manufacturingOrderId": "MO-130",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-23T09:00:00.000Z",
+      "endDate": "2023-10-23T09:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-159"
+      ]
+    }
+  },
+  {
+    "docId": "WO-161",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-161",
+      "manufacturingOrderId": "MO-130",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-23T09:30:00.000Z",
+      "endDate": "2023-10-23T10:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-160"
+      ]
+    }
+  },
+  {
+    "docId": "WO-162",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-162",
+      "manufacturingOrderId": "MO-130",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-23T10:00:00.000Z",
+      "endDate": "2023-10-23T10:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-161"
+      ]
+    }
+  },
+  {
+    "docId": "WO-163",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-163",
+      "manufacturingOrderId": "MO-131",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-23T08:30:00.000Z",
+      "endDate": "2023-10-23T12:30:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-164",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-164",
+      "manufacturingOrderId": "MO-131",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-23T12:30:00.000Z",
+      "endDate": "2023-10-23T14:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-163"
+      ]
+    }
+  },
+  {
+    "docId": "WO-165",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-165",
+      "manufacturingOrderId": "MO-131",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-23T14:30:00.000Z",
+      "endDate": "2023-10-23T17:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-164"
+      ]
+    }
+  },
+  {
+    "docId": "WO-166",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-166",
+      "manufacturingOrderId": "MO-131",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-23T17:30:00.000Z",
+      "endDate": "2023-10-23T19:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-165"
+      ]
+    }
+  },
+  {
+    "docId": "WO-167",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-167",
+      "manufacturingOrderId": "MO-131",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-23T19:30:00.000Z",
+      "endDate": "2023-10-23T20:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-166"
+      ]
+    }
+  },
+  {
+    "docId": "WO-168",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-168",
+      "manufacturingOrderId": "MO-131",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-23T20:30:00.000Z",
+      "endDate": "2023-10-23T21:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-167"
+      ]
+    }
+  },
+  {
+    "docId": "WO-169",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-169",
+      "manufacturingOrderId": "MO-132",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-23T09:00:00.000Z",
+      "endDate": "2023-10-23T11:00:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-170",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-170",
+      "manufacturingOrderId": "MO-132",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-23T11:00:00.000Z",
+      "endDate": "2023-10-23T12:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-169"
+      ]
+    }
+  },
+  {
+    "docId": "WO-171",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-171",
+      "manufacturingOrderId": "MO-132",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-23T12:00:00.000Z",
+      "endDate": "2023-10-23T13:30:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-170"
+      ]
+    }
+  },
+  {
+    "docId": "WO-172",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-172",
+      "manufacturingOrderId": "MO-132",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-23T13:30:00.000Z",
+      "endDate": "2023-10-23T14:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-171"
+      ]
+    }
+  },
+  {
+    "docId": "WO-173",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-173",
+      "manufacturingOrderId": "MO-132",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-23T14:30:00.000Z",
+      "endDate": "2023-10-23T15:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-172"
+      ]
+    }
+  },
+  {
+    "docId": "WO-174",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-174",
+      "manufacturingOrderId": "MO-132",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-23T15:00:00.000Z",
+      "endDate": "2023-10-23T15:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-173"
+      ]
+    }
+  },
+  {
+    "docId": "WO-175",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-175",
+      "manufacturingOrderId": "MO-133",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-23T09:30:00.000Z",
+      "endDate": "2023-10-23T12:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-176",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-176",
+      "manufacturingOrderId": "MO-133",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-23T12:30:00.000Z",
+      "endDate": "2023-10-23T14:00:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-175"
+      ]
+    }
+  },
+  {
+    "docId": "WO-177",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-177",
+      "manufacturingOrderId": "MO-133",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-23T14:00:00.000Z",
+      "endDate": "2023-10-23T15:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-176"
+      ]
+    }
+  },
+  {
+    "docId": "WO-178",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-178",
+      "manufacturingOrderId": "MO-133",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-23T15:00:00.000Z",
+      "endDate": "2023-10-23T15:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-177"
+      ]
+    }
+  },
+  {
+    "docId": "WO-179",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-179",
+      "manufacturingOrderId": "MO-133",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-23T15:30:00.000Z",
+      "endDate": "2023-10-23T16:15:00.000Z",
+      "durationMinutes": 45,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-178"
+      ]
+    }
+  },
+  {
+    "docId": "WO-180",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-180",
+      "manufacturingOrderId": "MO-134",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-23T10:00:00.000Z",
+      "endDate": "2023-10-23T11:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-181",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-181",
+      "manufacturingOrderId": "MO-134",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-23T11:00:00.000Z",
+      "endDate": "2023-10-23T11:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-180"
+      ]
+    }
+  },
+  {
+    "docId": "WO-182",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-182",
+      "manufacturingOrderId": "MO-134",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-23T11:30:00.000Z",
+      "endDate": "2023-10-23T12:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-181"
+      ]
+    }
+  },
+  {
+    "docId": "WO-183",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-183",
+      "manufacturingOrderId": "MO-134",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-23T12:00:00.000Z",
+      "endDate": "2023-10-23T12:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-182"
+      ]
+    }
+  },
+  {
+    "docId": "WO-184",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-184",
+      "manufacturingOrderId": "MO-135",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-23T10:30:00.000Z",
+      "endDate": "2023-10-23T14:30:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-185",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-185",
+      "manufacturingOrderId": "MO-135",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-23T14:30:00.000Z",
+      "endDate": "2023-10-23T16:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-184"
+      ]
+    }
+  },
+  {
+    "docId": "WO-186",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-186",
+      "manufacturingOrderId": "MO-135",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-23T16:30:00.000Z",
+      "endDate": "2023-10-23T19:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-185"
+      ]
+    }
+  },
+  {
+    "docId": "WO-187",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-187",
+      "manufacturingOrderId": "MO-135",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-23T19:30:00.000Z",
+      "endDate": "2023-10-23T21:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-186"
+      ]
+    }
+  },
+  {
+    "docId": "WO-188",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-188",
+      "manufacturingOrderId": "MO-135",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-23T21:30:00.000Z",
+      "endDate": "2023-10-23T22:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-187"
+      ]
+    }
+  },
+  {
+    "docId": "WO-189",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-189",
+      "manufacturingOrderId": "MO-135",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-23T22:30:00.000Z",
+      "endDate": "2023-10-23T23:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-188"
+      ]
+    }
+  },
+  {
+    "docId": "WO-190",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-190",
+      "manufacturingOrderId": "MO-136",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-24T08:00:00.000Z",
+      "endDate": "2023-10-24T10:00:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-191",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-191",
+      "manufacturingOrderId": "MO-136",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-24T10:00:00.000Z",
+      "endDate": "2023-10-24T11:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-190"
+      ]
+    }
+  },
+  {
+    "docId": "WO-192",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-192",
+      "manufacturingOrderId": "MO-136",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-24T11:00:00.000Z",
+      "endDate": "2023-10-24T12:30:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-191"
+      ]
+    }
+  },
+  {
+    "docId": "WO-193",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-193",
+      "manufacturingOrderId": "MO-136",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-24T12:30:00.000Z",
+      "endDate": "2023-10-24T13:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-192"
+      ]
+    }
+  },
+  {
+    "docId": "WO-194",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-194",
+      "manufacturingOrderId": "MO-136",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-24T13:30:00.000Z",
+      "endDate": "2023-10-24T14:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-193"
+      ]
+    }
+  },
+  {
+    "docId": "WO-195",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-195",
+      "manufacturingOrderId": "MO-136",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-24T14:00:00.000Z",
+      "endDate": "2023-10-24T14:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-194"
+      ]
+    }
+  },
+  {
+    "docId": "WO-196",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-196",
+      "manufacturingOrderId": "MO-137",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-24T08:30:00.000Z",
+      "endDate": "2023-10-24T11:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-197",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-197",
+      "manufacturingOrderId": "MO-137",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-24T11:30:00.000Z",
+      "endDate": "2023-10-24T13:00:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-196"
+      ]
+    }
+  },
+  {
+    "docId": "WO-198",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-198",
+      "manufacturingOrderId": "MO-137",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-24T13:00:00.000Z",
+      "endDate": "2023-10-24T14:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-197"
+      ]
+    }
+  },
+  {
+    "docId": "WO-199",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-199",
+      "manufacturingOrderId": "MO-137",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-24T14:00:00.000Z",
+      "endDate": "2023-10-24T14:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-198"
+      ]
+    }
+  },
+  {
+    "docId": "WO-200",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-200",
+      "manufacturingOrderId": "MO-137",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-24T14:30:00.000Z",
+      "endDate": "2023-10-24T15:15:00.000Z",
+      "durationMinutes": 45,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-199"
+      ]
+    }
+  },
+  {
+    "docId": "WO-201",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-201",
+      "manufacturingOrderId": "MO-138",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-24T09:00:00.000Z",
+      "endDate": "2023-10-24T10:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-202",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-202",
+      "manufacturingOrderId": "MO-138",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-24T10:00:00.000Z",
+      "endDate": "2023-10-24T10:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-201"
+      ]
+    }
+  },
+  {
+    "docId": "WO-203",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-203",
+      "manufacturingOrderId": "MO-138",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-24T10:30:00.000Z",
+      "endDate": "2023-10-24T11:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-202"
+      ]
+    }
+  },
+  {
+    "docId": "WO-204",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-204",
+      "manufacturingOrderId": "MO-138",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-24T11:00:00.000Z",
+      "endDate": "2023-10-24T11:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-203"
+      ]
+    }
+  },
+  {
+    "docId": "WO-205",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-205",
+      "manufacturingOrderId": "MO-139",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-24T09:30:00.000Z",
+      "endDate": "2023-10-24T13:30:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-206",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-206",
+      "manufacturingOrderId": "MO-139",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-24T13:30:00.000Z",
+      "endDate": "2023-10-24T15:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-205"
+      ]
+    }
+  },
+  {
+    "docId": "WO-207",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-207",
+      "manufacturingOrderId": "MO-139",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-24T15:30:00.000Z",
+      "endDate": "2023-10-24T18:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-206"
+      ]
+    }
+  },
+  {
+    "docId": "WO-208",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-208",
+      "manufacturingOrderId": "MO-139",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-24T18:30:00.000Z",
+      "endDate": "2023-10-24T20:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-207"
+      ]
+    }
+  },
+  {
+    "docId": "WO-209",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-209",
+      "manufacturingOrderId": "MO-139",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-24T20:30:00.000Z",
+      "endDate": "2023-10-24T21:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-208"
+      ]
+    }
+  },
+  {
+    "docId": "WO-210",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-210",
+      "manufacturingOrderId": "MO-139",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-24T21:30:00.000Z",
+      "endDate": "2023-10-24T22:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-209"
+      ]
+    }
+  },
+  {
+    "docId": "WO-211",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-211",
+      "manufacturingOrderId": "MO-140",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-24T10:00:00.000Z",
+      "endDate": "2023-10-24T12:00:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-212",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-212",
+      "manufacturingOrderId": "MO-140",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-24T12:00:00.000Z",
+      "endDate": "2023-10-24T13:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-211"
+      ]
+    }
+  },
+  {
+    "docId": "WO-213",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-213",
+      "manufacturingOrderId": "MO-140",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-24T13:00:00.000Z",
+      "endDate": "2023-10-24T14:30:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-212"
+      ]
+    }
+  },
+  {
+    "docId": "WO-214",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-214",
+      "manufacturingOrderId": "MO-140",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-24T14:30:00.000Z",
+      "endDate": "2023-10-24T15:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-213"
+      ]
+    }
+  },
+  {
+    "docId": "WO-215",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-215",
+      "manufacturingOrderId": "MO-140",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-24T15:30:00.000Z",
+      "endDate": "2023-10-24T16:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-214"
+      ]
+    }
+  },
+  {
+    "docId": "WO-216",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-216",
+      "manufacturingOrderId": "MO-140",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-24T16:00:00.000Z",
+      "endDate": "2023-10-24T16:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-215"
+      ]
+    }
+  },
+  {
+    "docId": "WO-217",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-217",
+      "manufacturingOrderId": "MO-141",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-24T10:30:00.000Z",
+      "endDate": "2023-10-24T13:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-218",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-218",
+      "manufacturingOrderId": "MO-141",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-24T13:30:00.000Z",
+      "endDate": "2023-10-24T15:00:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-217"
+      ]
+    }
+  },
+  {
+    "docId": "WO-219",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-219",
+      "manufacturingOrderId": "MO-141",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-24T15:00:00.000Z",
+      "endDate": "2023-10-24T16:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-218"
+      ]
+    }
+  },
+  {
+    "docId": "WO-220",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-220",
+      "manufacturingOrderId": "MO-141",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-24T16:00:00.000Z",
+      "endDate": "2023-10-24T16:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-219"
+      ]
+    }
+  },
+  {
+    "docId": "WO-221",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-221",
+      "manufacturingOrderId": "MO-141",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-24T16:30:00.000Z",
+      "endDate": "2023-10-24T17:15:00.000Z",
+      "durationMinutes": 45,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-220"
+      ]
+    }
+  },
+  {
+    "docId": "WO-222",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-222",
+      "manufacturingOrderId": "MO-142",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-25T08:00:00.000Z",
+      "endDate": "2023-10-25T09:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-223",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-223",
+      "manufacturingOrderId": "MO-142",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-25T09:00:00.000Z",
+      "endDate": "2023-10-25T09:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-222"
+      ]
+    }
+  },
+  {
+    "docId": "WO-224",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-224",
+      "manufacturingOrderId": "MO-142",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-25T09:30:00.000Z",
+      "endDate": "2023-10-25T10:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-223"
+      ]
+    }
+  },
+  {
+    "docId": "WO-225",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-225",
+      "manufacturingOrderId": "MO-142",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-25T10:00:00.000Z",
+      "endDate": "2023-10-25T10:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-224"
+      ]
+    }
+  },
+  {
+    "docId": "WO-226",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-226",
+      "manufacturingOrderId": "MO-143",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-25T08:30:00.000Z",
+      "endDate": "2023-10-25T12:30:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-227",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-227",
+      "manufacturingOrderId": "MO-143",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-25T12:30:00.000Z",
+      "endDate": "2023-10-25T14:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-226"
+      ]
+    }
+  },
+  {
+    "docId": "WO-228",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-228",
+      "manufacturingOrderId": "MO-143",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-25T14:30:00.000Z",
+      "endDate": "2023-10-25T17:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-227"
+      ]
+    }
+  },
+  {
+    "docId": "WO-229",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-229",
+      "manufacturingOrderId": "MO-143",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-25T17:30:00.000Z",
+      "endDate": "2023-10-25T19:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-228"
+      ]
+    }
+  },
+  {
+    "docId": "WO-230",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-230",
+      "manufacturingOrderId": "MO-143",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-25T19:30:00.000Z",
+      "endDate": "2023-10-25T20:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-229"
+      ]
+    }
+  },
+  {
+    "docId": "WO-231",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-231",
+      "manufacturingOrderId": "MO-143",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-25T20:30:00.000Z",
+      "endDate": "2023-10-25T21:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-230"
+      ]
+    }
+  },
+  {
+    "docId": "WO-232",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-232",
+      "manufacturingOrderId": "MO-144",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-25T09:00:00.000Z",
+      "endDate": "2023-10-25T11:00:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-233",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-233",
+      "manufacturingOrderId": "MO-144",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-25T11:00:00.000Z",
+      "endDate": "2023-10-25T12:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-232"
+      ]
+    }
+  },
+  {
+    "docId": "WO-234",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-234",
+      "manufacturingOrderId": "MO-144",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-25T12:00:00.000Z",
+      "endDate": "2023-10-25T13:30:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-233"
+      ]
+    }
+  },
+  {
+    "docId": "WO-235",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-235",
+      "manufacturingOrderId": "MO-144",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-25T13:30:00.000Z",
+      "endDate": "2023-10-25T14:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-234"
+      ]
+    }
+  },
+  {
+    "docId": "WO-236",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-236",
+      "manufacturingOrderId": "MO-144",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-25T14:30:00.000Z",
+      "endDate": "2023-10-25T15:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-235"
+      ]
+    }
+  },
+  {
+    "docId": "WO-237",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-237",
+      "manufacturingOrderId": "MO-144",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-25T15:00:00.000Z",
+      "endDate": "2023-10-25T15:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-236"
+      ]
+    }
+  },
+  {
+    "docId": "WO-238",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-238",
+      "manufacturingOrderId": "MO-145",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-25T09:30:00.000Z",
+      "endDate": "2023-10-25T12:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-239",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-239",
+      "manufacturingOrderId": "MO-145",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-25T12:30:00.000Z",
+      "endDate": "2023-10-25T14:00:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-238"
+      ]
+    }
+  },
+  {
+    "docId": "WO-240",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-240",
+      "manufacturingOrderId": "MO-145",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-25T14:00:00.000Z",
+      "endDate": "2023-10-25T15:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-239"
+      ]
+    }
+  },
+  {
+    "docId": "WO-241",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-241",
+      "manufacturingOrderId": "MO-145",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-25T15:00:00.000Z",
+      "endDate": "2023-10-25T15:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-240"
+      ]
+    }
+  },
+  {
+    "docId": "WO-242",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-242",
+      "manufacturingOrderId": "MO-145",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-25T15:30:00.000Z",
+      "endDate": "2023-10-25T16:15:00.000Z",
+      "durationMinutes": 45,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-241"
+      ]
+    }
+  },
+  {
+    "docId": "WO-243",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-243",
+      "manufacturingOrderId": "MO-146",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-25T10:00:00.000Z",
+      "endDate": "2023-10-25T11:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-244",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-244",
+      "manufacturingOrderId": "MO-146",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-25T11:00:00.000Z",
+      "endDate": "2023-10-25T11:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-243"
+      ]
+    }
+  },
+  {
+    "docId": "WO-245",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-245",
+      "manufacturingOrderId": "MO-146",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-25T11:30:00.000Z",
+      "endDate": "2023-10-25T12:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-244"
+      ]
+    }
+  },
+  {
+    "docId": "WO-246",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-246",
+      "manufacturingOrderId": "MO-146",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-25T12:00:00.000Z",
+      "endDate": "2023-10-25T12:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-245"
+      ]
+    }
+  },
+  {
+    "docId": "WO-247",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-247",
+      "manufacturingOrderId": "MO-147",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-25T10:30:00.000Z",
+      "endDate": "2023-10-25T14:30:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-248",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-248",
+      "manufacturingOrderId": "MO-147",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-25T14:30:00.000Z",
+      "endDate": "2023-10-25T16:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-247"
+      ]
+    }
+  },
+  {
+    "docId": "WO-249",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-249",
+      "manufacturingOrderId": "MO-147",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-25T16:30:00.000Z",
+      "endDate": "2023-10-25T19:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-248"
+      ]
+    }
+  },
+  {
+    "docId": "WO-250",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-250",
+      "manufacturingOrderId": "MO-147",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-25T19:30:00.000Z",
+      "endDate": "2023-10-25T21:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-249"
+      ]
+    }
+  },
+  {
+    "docId": "WO-251",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-251",
+      "manufacturingOrderId": "MO-147",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-25T21:30:00.000Z",
+      "endDate": "2023-10-25T22:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-250"
+      ]
+    }
+  },
+  {
+    "docId": "WO-252",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-252",
+      "manufacturingOrderId": "MO-147",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-25T22:30:00.000Z",
+      "endDate": "2023-10-25T23:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-251"
+      ]
+    }
+  },
+  {
+    "docId": "WO-253",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-253",
+      "manufacturingOrderId": "MO-148",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-26T08:00:00.000Z",
+      "endDate": "2023-10-26T10:00:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-254",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-254",
+      "manufacturingOrderId": "MO-148",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-26T10:00:00.000Z",
+      "endDate": "2023-10-26T11:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-253"
+      ]
+    }
+  },
+  {
+    "docId": "WO-255",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-255",
+      "manufacturingOrderId": "MO-148",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-26T11:00:00.000Z",
+      "endDate": "2023-10-26T12:30:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-254"
+      ]
+    }
+  },
+  {
+    "docId": "WO-256",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-256",
+      "manufacturingOrderId": "MO-148",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-26T12:30:00.000Z",
+      "endDate": "2023-10-26T13:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-255"
+      ]
+    }
+  },
+  {
+    "docId": "WO-257",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-257",
+      "manufacturingOrderId": "MO-148",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-26T13:30:00.000Z",
+      "endDate": "2023-10-26T14:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-256"
+      ]
+    }
+  },
+  {
+    "docId": "WO-258",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-258",
+      "manufacturingOrderId": "MO-148",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-26T14:00:00.000Z",
+      "endDate": "2023-10-26T14:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-257"
+      ]
+    }
+  },
+  {
+    "docId": "WO-259",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-259",
+      "manufacturingOrderId": "MO-149",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-26T08:30:00.000Z",
+      "endDate": "2023-10-26T11:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-260",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-260",
+      "manufacturingOrderId": "MO-149",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-26T11:30:00.000Z",
+      "endDate": "2023-10-26T13:00:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-259"
+      ]
+    }
+  },
+  {
+    "docId": "WO-261",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-261",
+      "manufacturingOrderId": "MO-149",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-26T13:00:00.000Z",
+      "endDate": "2023-10-26T14:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-260"
+      ]
+    }
+  },
+  {
+    "docId": "WO-262",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-262",
+      "manufacturingOrderId": "MO-149",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-26T14:00:00.000Z",
+      "endDate": "2023-10-26T14:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-261"
+      ]
+    }
+  },
+  {
+    "docId": "WO-263",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-263",
+      "manufacturingOrderId": "MO-149",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-26T14:30:00.000Z",
+      "endDate": "2023-10-26T15:15:00.000Z",
+      "durationMinutes": 45,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-262"
+      ]
+    }
+  },
+  {
+    "docId": "WO-264",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-264",
+      "manufacturingOrderId": "MO-150",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-26T09:00:00.000Z",
+      "endDate": "2023-10-26T10:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-265",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-265",
+      "manufacturingOrderId": "MO-150",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-26T10:00:00.000Z",
+      "endDate": "2023-10-26T10:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-264"
+      ]
+    }
+  },
+  {
+    "docId": "WO-266",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-266",
+      "manufacturingOrderId": "MO-150",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-26T10:30:00.000Z",
+      "endDate": "2023-10-26T11:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-265"
+      ]
+    }
+  },
+  {
+    "docId": "WO-267",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-267",
+      "manufacturingOrderId": "MO-150",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-26T11:00:00.000Z",
+      "endDate": "2023-10-26T11:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-266"
+      ]
+    }
+  },
+  {
+    "docId": "WO-268",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-268",
+      "manufacturingOrderId": "MO-151",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-26T09:30:00.000Z",
+      "endDate": "2023-10-26T13:30:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-269",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-269",
+      "manufacturingOrderId": "MO-151",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-26T13:30:00.000Z",
+      "endDate": "2023-10-26T15:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-268"
+      ]
+    }
+  },
+  {
+    "docId": "WO-270",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-270",
+      "manufacturingOrderId": "MO-151",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-26T15:30:00.000Z",
+      "endDate": "2023-10-26T18:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-269"
+      ]
+    }
+  },
+  {
+    "docId": "WO-271",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-271",
+      "manufacturingOrderId": "MO-151",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-26T18:30:00.000Z",
+      "endDate": "2023-10-26T20:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-270"
+      ]
+    }
+  },
+  {
+    "docId": "WO-272",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-272",
+      "manufacturingOrderId": "MO-151",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-26T20:30:00.000Z",
+      "endDate": "2023-10-26T21:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-271"
+      ]
+    }
+  },
+  {
+    "docId": "WO-273",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-273",
+      "manufacturingOrderId": "MO-151",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-26T21:30:00.000Z",
+      "endDate": "2023-10-26T22:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-272"
+      ]
+    }
+  },
+  {
+    "docId": "WO-274",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-274",
+      "manufacturingOrderId": "MO-152",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-26T10:00:00.000Z",
+      "endDate": "2023-10-26T12:00:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-275",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-275",
+      "manufacturingOrderId": "MO-152",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-26T12:00:00.000Z",
+      "endDate": "2023-10-26T13:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-274"
+      ]
+    }
+  },
+  {
+    "docId": "WO-276",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-276",
+      "manufacturingOrderId": "MO-152",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-26T13:00:00.000Z",
+      "endDate": "2023-10-26T14:30:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-275"
+      ]
+    }
+  },
+  {
+    "docId": "WO-277",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-277",
+      "manufacturingOrderId": "MO-152",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-26T14:30:00.000Z",
+      "endDate": "2023-10-26T15:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-276"
+      ]
+    }
+  },
+  {
+    "docId": "WO-278",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-278",
+      "manufacturingOrderId": "MO-152",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-26T15:30:00.000Z",
+      "endDate": "2023-10-26T16:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-277"
+      ]
+    }
+  },
+  {
+    "docId": "WO-279",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-279",
+      "manufacturingOrderId": "MO-152",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-26T16:00:00.000Z",
+      "endDate": "2023-10-26T16:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-278"
+      ]
+    }
+  },
+  {
+    "docId": "WO-280",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-280",
+      "manufacturingOrderId": "MO-153",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-26T10:30:00.000Z",
+      "endDate": "2023-10-26T13:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-281",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-281",
+      "manufacturingOrderId": "MO-153",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-26T13:30:00.000Z",
+      "endDate": "2023-10-26T15:00:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-280"
+      ]
+    }
+  },
+  {
+    "docId": "WO-282",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-282",
+      "manufacturingOrderId": "MO-153",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-26T15:00:00.000Z",
+      "endDate": "2023-10-26T16:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-281"
+      ]
+    }
+  },
+  {
+    "docId": "WO-283",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-283",
+      "manufacturingOrderId": "MO-153",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-26T16:00:00.000Z",
+      "endDate": "2023-10-26T16:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-282"
+      ]
+    }
+  },
+  {
+    "docId": "WO-284",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-284",
+      "manufacturingOrderId": "MO-153",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-26T16:30:00.000Z",
+      "endDate": "2023-10-26T17:15:00.000Z",
+      "durationMinutes": 45,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-283"
+      ]
+    }
+  },
+  {
+    "docId": "WO-285",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-285",
+      "manufacturingOrderId": "MO-154",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-27T08:00:00.000Z",
+      "endDate": "2023-10-27T09:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-286",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-286",
+      "manufacturingOrderId": "MO-154",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-27T09:00:00.000Z",
+      "endDate": "2023-10-27T09:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-285"
+      ]
+    }
+  },
+  {
+    "docId": "WO-287",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-287",
+      "manufacturingOrderId": "MO-154",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-27T09:30:00.000Z",
+      "endDate": "2023-10-27T10:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-286"
+      ]
+    }
+  },
+  {
+    "docId": "WO-288",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-288",
+      "manufacturingOrderId": "MO-154",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-27T10:00:00.000Z",
+      "endDate": "2023-10-27T10:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-287"
+      ]
+    }
+  },
+  {
+    "docId": "WO-289",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-289",
+      "manufacturingOrderId": "MO-155",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-27T08:30:00.000Z",
+      "endDate": "2023-10-27T12:30:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-290",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-290",
+      "manufacturingOrderId": "MO-155",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-27T12:30:00.000Z",
+      "endDate": "2023-10-27T14:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-289"
+      ]
+    }
+  },
+  {
+    "docId": "WO-291",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-291",
+      "manufacturingOrderId": "MO-155",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-27T14:30:00.000Z",
+      "endDate": "2023-10-27T17:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-290"
+      ]
+    }
+  },
+  {
+    "docId": "WO-292",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-292",
+      "manufacturingOrderId": "MO-155",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-27T17:30:00.000Z",
+      "endDate": "2023-10-27T19:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-291"
+      ]
+    }
+  },
+  {
+    "docId": "WO-293",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-293",
+      "manufacturingOrderId": "MO-155",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-27T19:30:00.000Z",
+      "endDate": "2023-10-27T20:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-292"
+      ]
+    }
+  },
+  {
+    "docId": "WO-294",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-294",
+      "manufacturingOrderId": "MO-155",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-27T20:30:00.000Z",
+      "endDate": "2023-10-27T21:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-293"
+      ]
+    }
+  },
+  {
+    "docId": "WO-295",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-295",
+      "manufacturingOrderId": "MO-156",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-27T09:00:00.000Z",
+      "endDate": "2023-10-27T11:00:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-296",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-296",
+      "manufacturingOrderId": "MO-156",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-27T11:00:00.000Z",
+      "endDate": "2023-10-27T12:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-295"
+      ]
+    }
+  },
+  {
+    "docId": "WO-297",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-297",
+      "manufacturingOrderId": "MO-156",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-27T12:00:00.000Z",
+      "endDate": "2023-10-27T13:30:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-296"
+      ]
+    }
+  },
+  {
+    "docId": "WO-298",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-298",
+      "manufacturingOrderId": "MO-156",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-27T13:30:00.000Z",
+      "endDate": "2023-10-27T14:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-297"
+      ]
+    }
+  },
+  {
+    "docId": "WO-299",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-299",
+      "manufacturingOrderId": "MO-156",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-27T14:30:00.000Z",
+      "endDate": "2023-10-27T15:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-298"
+      ]
+    }
+  },
+  {
+    "docId": "WO-300",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-300",
+      "manufacturingOrderId": "MO-156",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-27T15:00:00.000Z",
+      "endDate": "2023-10-27T15:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-299"
+      ]
+    }
+  },
+  {
+    "docId": "WO-301",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-301",
+      "manufacturingOrderId": "MO-157",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-27T09:30:00.000Z",
+      "endDate": "2023-10-27T12:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-302",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-302",
+      "manufacturingOrderId": "MO-157",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-27T12:30:00.000Z",
+      "endDate": "2023-10-27T14:00:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-301"
+      ]
+    }
+  },
+  {
+    "docId": "WO-303",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-303",
+      "manufacturingOrderId": "MO-157",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-27T14:00:00.000Z",
+      "endDate": "2023-10-27T15:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-302"
+      ]
+    }
+  },
+  {
+    "docId": "WO-304",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-304",
+      "manufacturingOrderId": "MO-157",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-27T15:00:00.000Z",
+      "endDate": "2023-10-27T15:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-303"
+      ]
+    }
+  },
+  {
+    "docId": "WO-305",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-305",
+      "manufacturingOrderId": "MO-157",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-27T15:30:00.000Z",
+      "endDate": "2023-10-27T16:15:00.000Z",
+      "durationMinutes": 45,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-304"
+      ]
+    }
+  },
+  {
+    "docId": "WO-306",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-306",
+      "manufacturingOrderId": "MO-158",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-27T10:00:00.000Z",
+      "endDate": "2023-10-27T11:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-307",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-307",
+      "manufacturingOrderId": "MO-158",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-27T11:00:00.000Z",
+      "endDate": "2023-10-27T11:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-306"
+      ]
+    }
+  },
+  {
+    "docId": "WO-308",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-308",
+      "manufacturingOrderId": "MO-158",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-27T11:30:00.000Z",
+      "endDate": "2023-10-27T12:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-307"
+      ]
+    }
+  },
+  {
+    "docId": "WO-309",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-309",
+      "manufacturingOrderId": "MO-158",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-27T12:00:00.000Z",
+      "endDate": "2023-10-27T12:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-308"
+      ]
+    }
+  },
+  {
+    "docId": "WO-310",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-310",
+      "manufacturingOrderId": "MO-159",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-27T10:30:00.000Z",
+      "endDate": "2023-10-27T14:30:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-311",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-311",
+      "manufacturingOrderId": "MO-159",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-27T14:30:00.000Z",
+      "endDate": "2023-10-27T16:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-310"
+      ]
+    }
+  },
+  {
+    "docId": "WO-312",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-312",
+      "manufacturingOrderId": "MO-159",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-27T16:30:00.000Z",
+      "endDate": "2023-10-27T19:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-311"
+      ]
+    }
+  },
+  {
+    "docId": "WO-313",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-313",
+      "manufacturingOrderId": "MO-159",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-27T19:30:00.000Z",
+      "endDate": "2023-10-27T21:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-312"
+      ]
+    }
+  },
+  {
+    "docId": "WO-314",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-314",
+      "manufacturingOrderId": "MO-159",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-27T21:30:00.000Z",
+      "endDate": "2023-10-27T22:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-313"
+      ]
+    }
+  },
+  {
+    "docId": "WO-315",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-315",
+      "manufacturingOrderId": "MO-159",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-27T22:30:00.000Z",
+      "endDate": "2023-10-27T23:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-314"
+      ]
+    }
+  },
+  {
+    "docId": "WO-316",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-316",
+      "manufacturingOrderId": "MO-160",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-30T08:00:00.000Z",
+      "endDate": "2023-10-30T10:00:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-317",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-317",
+      "manufacturingOrderId": "MO-160",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-30T10:00:00.000Z",
+      "endDate": "2023-10-30T11:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-316"
+      ]
+    }
+  },
+  {
+    "docId": "WO-318",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-318",
+      "manufacturingOrderId": "MO-160",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-30T11:00:00.000Z",
+      "endDate": "2023-10-30T12:30:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-317"
+      ]
+    }
+  },
+  {
+    "docId": "WO-319",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-319",
+      "manufacturingOrderId": "MO-160",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-30T12:30:00.000Z",
+      "endDate": "2023-10-30T13:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-318"
+      ]
+    }
+  },
+  {
+    "docId": "WO-320",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-320",
+      "manufacturingOrderId": "MO-160",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-30T13:30:00.000Z",
+      "endDate": "2023-10-30T14:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-319"
+      ]
+    }
+  },
+  {
+    "docId": "WO-321",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-321",
+      "manufacturingOrderId": "MO-160",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-30T14:00:00.000Z",
+      "endDate": "2023-10-30T14:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-320"
+      ]
+    }
+  },
+  {
+    "docId": "WO-322",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-322",
+      "manufacturingOrderId": "MO-161",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-30T08:30:00.000Z",
+      "endDate": "2023-10-30T11:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-323",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-323",
+      "manufacturingOrderId": "MO-161",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-30T11:30:00.000Z",
+      "endDate": "2023-10-30T13:00:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-322"
+      ]
+    }
+  },
+  {
+    "docId": "WO-324",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-324",
+      "manufacturingOrderId": "MO-161",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-30T13:00:00.000Z",
+      "endDate": "2023-10-30T14:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-323"
+      ]
+    }
+  },
+  {
+    "docId": "WO-325",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-325",
+      "manufacturingOrderId": "MO-161",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-30T14:00:00.000Z",
+      "endDate": "2023-10-30T14:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-324"
+      ]
+    }
+  },
+  {
+    "docId": "WO-326",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-326",
+      "manufacturingOrderId": "MO-161",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-30T14:30:00.000Z",
+      "endDate": "2023-10-30T15:15:00.000Z",
+      "durationMinutes": 45,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-325"
+      ]
+    }
+  },
+  {
+    "docId": "WO-327",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-327",
+      "manufacturingOrderId": "MO-162",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-30T09:00:00.000Z",
+      "endDate": "2023-10-30T10:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-328",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-328",
+      "manufacturingOrderId": "MO-162",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-30T10:00:00.000Z",
+      "endDate": "2023-10-30T10:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-327"
+      ]
+    }
+  },
+  {
+    "docId": "WO-329",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-329",
+      "manufacturingOrderId": "MO-162",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-30T10:30:00.000Z",
+      "endDate": "2023-10-30T11:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-328"
+      ]
+    }
+  },
+  {
+    "docId": "WO-330",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-330",
+      "manufacturingOrderId": "MO-162",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-30T11:00:00.000Z",
+      "endDate": "2023-10-30T11:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-329"
+      ]
+    }
+  },
+  {
+    "docId": "WO-331",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-331",
+      "manufacturingOrderId": "MO-163",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-30T09:30:00.000Z",
+      "endDate": "2023-10-30T13:30:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-332",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-332",
+      "manufacturingOrderId": "MO-163",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-30T13:30:00.000Z",
+      "endDate": "2023-10-30T15:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-331"
+      ]
+    }
+  },
+  {
+    "docId": "WO-333",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-333",
+      "manufacturingOrderId": "MO-163",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-30T15:30:00.000Z",
+      "endDate": "2023-10-30T18:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-332"
+      ]
+    }
+  },
+  {
+    "docId": "WO-334",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-334",
+      "manufacturingOrderId": "MO-163",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-30T18:30:00.000Z",
+      "endDate": "2023-10-30T20:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-333"
+      ]
+    }
+  },
+  {
+    "docId": "WO-335",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-335",
+      "manufacturingOrderId": "MO-163",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-30T20:30:00.000Z",
+      "endDate": "2023-10-30T21:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-334"
+      ]
+    }
+  },
+  {
+    "docId": "WO-336",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-336",
+      "manufacturingOrderId": "MO-163",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-30T21:30:00.000Z",
+      "endDate": "2023-10-30T22:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-335"
+      ]
+    }
+  },
+  {
+    "docId": "WO-337",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-337",
+      "manufacturingOrderId": "MO-164",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-30T10:00:00.000Z",
+      "endDate": "2023-10-30T12:00:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-338",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-338",
+      "manufacturingOrderId": "MO-164",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-30T12:00:00.000Z",
+      "endDate": "2023-10-30T13:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-337"
+      ]
+    }
+  },
+  {
+    "docId": "WO-339",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-339",
+      "manufacturingOrderId": "MO-164",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-30T13:00:00.000Z",
+      "endDate": "2023-10-30T14:30:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-338"
+      ]
+    }
+  },
+  {
+    "docId": "WO-340",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-340",
+      "manufacturingOrderId": "MO-164",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-30T14:30:00.000Z",
+      "endDate": "2023-10-30T15:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-339"
+      ]
+    }
+  },
+  {
+    "docId": "WO-341",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-341",
+      "manufacturingOrderId": "MO-164",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-30T15:30:00.000Z",
+      "endDate": "2023-10-30T16:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-340"
+      ]
+    }
+  },
+  {
+    "docId": "WO-342",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-342",
+      "manufacturingOrderId": "MO-164",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-30T16:00:00.000Z",
+      "endDate": "2023-10-30T16:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-341"
+      ]
+    }
+  },
+  {
+    "docId": "WO-343",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-343",
+      "manufacturingOrderId": "MO-165",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-30T10:30:00.000Z",
+      "endDate": "2023-10-30T13:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-344",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-344",
+      "manufacturingOrderId": "MO-165",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-30T13:30:00.000Z",
+      "endDate": "2023-10-30T15:00:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-343"
+      ]
+    }
+  },
+  {
+    "docId": "WO-345",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-345",
+      "manufacturingOrderId": "MO-165",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-30T15:00:00.000Z",
+      "endDate": "2023-10-30T16:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-344"
+      ]
+    }
+  },
+  {
+    "docId": "WO-346",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-346",
+      "manufacturingOrderId": "MO-165",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-30T16:00:00.000Z",
+      "endDate": "2023-10-30T16:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-345"
+      ]
+    }
+  },
+  {
+    "docId": "WO-347",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-347",
+      "manufacturingOrderId": "MO-165",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-30T16:30:00.000Z",
+      "endDate": "2023-10-30T17:15:00.000Z",
+      "durationMinutes": 45,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-346"
+      ]
+    }
+  },
+  {
+    "docId": "WO-348",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-348",
+      "manufacturingOrderId": "MO-166",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-31T08:00:00.000Z",
+      "endDate": "2023-10-31T09:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-349",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-349",
+      "manufacturingOrderId": "MO-166",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-31T09:00:00.000Z",
+      "endDate": "2023-10-31T09:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-348"
+      ]
+    }
+  },
+  {
+    "docId": "WO-350",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-350",
+      "manufacturingOrderId": "MO-166",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-31T09:30:00.000Z",
+      "endDate": "2023-10-31T10:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-349"
+      ]
+    }
+  },
+  {
+    "docId": "WO-351",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-351",
+      "manufacturingOrderId": "MO-166",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-31T10:00:00.000Z",
+      "endDate": "2023-10-31T10:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-350"
+      ]
+    }
+  },
+  {
+    "docId": "WO-352",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-352",
+      "manufacturingOrderId": "MO-167",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-31T08:30:00.000Z",
+      "endDate": "2023-10-31T12:30:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-353",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-353",
+      "manufacturingOrderId": "MO-167",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-31T12:30:00.000Z",
+      "endDate": "2023-10-31T14:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-352"
+      ]
+    }
+  },
+  {
+    "docId": "WO-354",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-354",
+      "manufacturingOrderId": "MO-167",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-31T14:30:00.000Z",
+      "endDate": "2023-10-31T17:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-353"
+      ]
+    }
+  },
+  {
+    "docId": "WO-355",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-355",
+      "manufacturingOrderId": "MO-167",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-31T17:30:00.000Z",
+      "endDate": "2023-10-31T19:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-354"
+      ]
+    }
+  },
+  {
+    "docId": "WO-356",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-356",
+      "manufacturingOrderId": "MO-167",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-31T19:30:00.000Z",
+      "endDate": "2023-10-31T20:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-355"
+      ]
+    }
+  },
+  {
+    "docId": "WO-357",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-357",
+      "manufacturingOrderId": "MO-167",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-31T20:30:00.000Z",
+      "endDate": "2023-10-31T21:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-356"
+      ]
+    }
+  },
+  {
+    "docId": "WO-358",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-358",
+      "manufacturingOrderId": "MO-168",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-31T09:00:00.000Z",
+      "endDate": "2023-10-31T11:00:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-359",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-359",
+      "manufacturingOrderId": "MO-168",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-31T11:00:00.000Z",
+      "endDate": "2023-10-31T12:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-358"
+      ]
+    }
+  },
+  {
+    "docId": "WO-360",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-360",
+      "manufacturingOrderId": "MO-168",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-31T12:00:00.000Z",
+      "endDate": "2023-10-31T13:30:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-359"
+      ]
+    }
+  },
+  {
+    "docId": "WO-361",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-361",
+      "manufacturingOrderId": "MO-168",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-31T13:30:00.000Z",
+      "endDate": "2023-10-31T14:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-360"
+      ]
+    }
+  },
+  {
+    "docId": "WO-362",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-362",
+      "manufacturingOrderId": "MO-168",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-31T14:30:00.000Z",
+      "endDate": "2023-10-31T15:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-361"
+      ]
+    }
+  },
+  {
+    "docId": "WO-363",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-363",
+      "manufacturingOrderId": "MO-168",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-31T15:00:00.000Z",
+      "endDate": "2023-10-31T15:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-362"
+      ]
+    }
+  },
+  {
+    "docId": "WO-364",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-364",
+      "manufacturingOrderId": "MO-169",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-31T09:30:00.000Z",
+      "endDate": "2023-10-31T12:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-365",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-365",
+      "manufacturingOrderId": "MO-169",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-31T12:30:00.000Z",
+      "endDate": "2023-10-31T14:00:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-364"
+      ]
+    }
+  },
+  {
+    "docId": "WO-366",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-366",
+      "manufacturingOrderId": "MO-169",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-31T14:00:00.000Z",
+      "endDate": "2023-10-31T15:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-365"
+      ]
+    }
+  },
+  {
+    "docId": "WO-367",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-367",
+      "manufacturingOrderId": "MO-169",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-31T15:00:00.000Z",
+      "endDate": "2023-10-31T15:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-366"
+      ]
+    }
+  },
+  {
+    "docId": "WO-368",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-368",
+      "manufacturingOrderId": "MO-169",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-31T15:30:00.000Z",
+      "endDate": "2023-10-31T16:15:00.000Z",
+      "durationMinutes": 45,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-367"
+      ]
+    }
+  },
+  {
+    "docId": "WO-369",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-369",
+      "manufacturingOrderId": "MO-170",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-31T10:00:00.000Z",
+      "endDate": "2023-10-31T11:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-370",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-370",
+      "manufacturingOrderId": "MO-170",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-31T11:00:00.000Z",
+      "endDate": "2023-10-31T11:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-369"
+      ]
+    }
+  },
+  {
+    "docId": "WO-371",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-371",
+      "manufacturingOrderId": "MO-170",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-31T11:30:00.000Z",
+      "endDate": "2023-10-31T12:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-370"
+      ]
+    }
+  },
+  {
+    "docId": "WO-372",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-372",
+      "manufacturingOrderId": "MO-170",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-10-31T12:00:00.000Z",
+      "endDate": "2023-10-31T12:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-371"
+      ]
+    }
+  },
+  {
+    "docId": "WO-373",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-373",
+      "manufacturingOrderId": "MO-171",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-10-31T10:30:00.000Z",
+      "endDate": "2023-10-31T14:30:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-374",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-374",
+      "manufacturingOrderId": "MO-171",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-10-31T14:30:00.000Z",
+      "endDate": "2023-10-31T16:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-373"
+      ]
+    }
+  },
+  {
+    "docId": "WO-375",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-375",
+      "manufacturingOrderId": "MO-171",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-31T16:30:00.000Z",
+      "endDate": "2023-10-31T19:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-374"
+      ]
+    }
+  },
+  {
+    "docId": "WO-376",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-376",
+      "manufacturingOrderId": "MO-171",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-10-31T19:30:00.000Z",
+      "endDate": "2023-10-31T21:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-375"
+      ]
+    }
+  },
+  {
+    "docId": "WO-377",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-377",
+      "manufacturingOrderId": "MO-171",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-10-31T21:30:00.000Z",
+      "endDate": "2023-10-31T22:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-376"
+      ]
+    }
+  },
+  {
+    "docId": "WO-378",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-378",
+      "manufacturingOrderId": "MO-171",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-10-31T22:30:00.000Z",
+      "endDate": "2023-10-31T23:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-377"
+      ]
+    }
+  },
+  {
+    "docId": "WO-379",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-379",
+      "manufacturingOrderId": "MO-172",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-11-01T08:00:00.000Z",
+      "endDate": "2023-11-01T10:00:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-380",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-380",
+      "manufacturingOrderId": "MO-172",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-11-01T10:00:00.000Z",
+      "endDate": "2023-11-01T11:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-379"
+      ]
+    }
+  },
+  {
+    "docId": "WO-381",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-381",
+      "manufacturingOrderId": "MO-172",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-11-01T11:00:00.000Z",
+      "endDate": "2023-11-01T12:30:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-380"
+      ]
+    }
+  },
+  {
+    "docId": "WO-382",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-382",
+      "manufacturingOrderId": "MO-172",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-11-01T12:30:00.000Z",
+      "endDate": "2023-11-01T13:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-381"
+      ]
+    }
+  },
+  {
+    "docId": "WO-383",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-383",
+      "manufacturingOrderId": "MO-172",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-11-01T13:30:00.000Z",
+      "endDate": "2023-11-01T14:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-382"
+      ]
+    }
+  },
+  {
+    "docId": "WO-384",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-384",
+      "manufacturingOrderId": "MO-172",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-11-01T14:00:00.000Z",
+      "endDate": "2023-11-01T14:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-383"
+      ]
+    }
+  },
+  {
+    "docId": "WO-385",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-385",
+      "manufacturingOrderId": "MO-173",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-11-01T08:30:00.000Z",
+      "endDate": "2023-11-01T11:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-386",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-386",
+      "manufacturingOrderId": "MO-173",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-11-01T11:30:00.000Z",
+      "endDate": "2023-11-01T13:00:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-385"
+      ]
+    }
+  },
+  {
+    "docId": "WO-387",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-387",
+      "manufacturingOrderId": "MO-173",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-11-01T13:00:00.000Z",
+      "endDate": "2023-11-01T14:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-386"
+      ]
+    }
+  },
+  {
+    "docId": "WO-388",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-388",
+      "manufacturingOrderId": "MO-173",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-11-01T14:00:00.000Z",
+      "endDate": "2023-11-01T14:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-387"
+      ]
+    }
+  },
+  {
+    "docId": "WO-389",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-389",
+      "manufacturingOrderId": "MO-173",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-11-01T14:30:00.000Z",
+      "endDate": "2023-11-01T15:15:00.000Z",
+      "durationMinutes": 45,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-388"
+      ]
+    }
+  },
+  {
+    "docId": "WO-390",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-390",
+      "manufacturingOrderId": "MO-174",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-11-01T09:00:00.000Z",
+      "endDate": "2023-11-01T10:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-391",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-391",
+      "manufacturingOrderId": "MO-174",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-11-01T10:00:00.000Z",
+      "endDate": "2023-11-01T10:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-390"
+      ]
+    }
+  },
+  {
+    "docId": "WO-392",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-392",
+      "manufacturingOrderId": "MO-174",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-11-01T10:30:00.000Z",
+      "endDate": "2023-11-01T11:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-391"
+      ]
+    }
+  },
+  {
+    "docId": "WO-393",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-393",
+      "manufacturingOrderId": "MO-174",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-11-01T11:00:00.000Z",
+      "endDate": "2023-11-01T11:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-392"
+      ]
+    }
+  },
+  {
+    "docId": "WO-394",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-394",
+      "manufacturingOrderId": "MO-175",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-11-01T09:30:00.000Z",
+      "endDate": "2023-11-01T13:30:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-395",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-395",
+      "manufacturingOrderId": "MO-175",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-11-01T13:30:00.000Z",
+      "endDate": "2023-11-01T15:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-394"
+      ]
+    }
+  },
+  {
+    "docId": "WO-396",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-396",
+      "manufacturingOrderId": "MO-175",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-11-01T15:30:00.000Z",
+      "endDate": "2023-11-01T18:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-395"
+      ]
+    }
+  },
+  {
+    "docId": "WO-397",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-397",
+      "manufacturingOrderId": "MO-175",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-11-01T18:30:00.000Z",
+      "endDate": "2023-11-01T20:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-396"
+      ]
+    }
+  },
+  {
+    "docId": "WO-398",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-398",
+      "manufacturingOrderId": "MO-175",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-11-01T20:30:00.000Z",
+      "endDate": "2023-11-01T21:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-397"
+      ]
+    }
+  },
+  {
+    "docId": "WO-399",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-399",
+      "manufacturingOrderId": "MO-175",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-11-01T21:30:00.000Z",
+      "endDate": "2023-11-01T22:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-398"
+      ]
+    }
+  },
+  {
+    "docId": "WO-400",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-400",
+      "manufacturingOrderId": "MO-176",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-11-01T10:00:00.000Z",
+      "endDate": "2023-11-01T12:00:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-401",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-401",
+      "manufacturingOrderId": "MO-176",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-11-01T12:00:00.000Z",
+      "endDate": "2023-11-01T13:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-400"
+      ]
+    }
+  },
+  {
+    "docId": "WO-402",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-402",
+      "manufacturingOrderId": "MO-176",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-11-01T13:00:00.000Z",
+      "endDate": "2023-11-01T14:30:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-401"
+      ]
+    }
+  },
+  {
+    "docId": "WO-403",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-403",
+      "manufacturingOrderId": "MO-176",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-11-01T14:30:00.000Z",
+      "endDate": "2023-11-01T15:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-402"
+      ]
+    }
+  },
+  {
+    "docId": "WO-404",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-404",
+      "manufacturingOrderId": "MO-176",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-11-01T15:30:00.000Z",
+      "endDate": "2023-11-01T16:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-403"
+      ]
+    }
+  },
+  {
+    "docId": "WO-405",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-405",
+      "manufacturingOrderId": "MO-176",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-11-01T16:00:00.000Z",
+      "endDate": "2023-11-01T16:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-404"
+      ]
+    }
+  },
+  {
+    "docId": "WO-406",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-406",
+      "manufacturingOrderId": "MO-177",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-11-01T10:30:00.000Z",
+      "endDate": "2023-11-01T13:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-407",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-407",
+      "manufacturingOrderId": "MO-177",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-11-01T13:30:00.000Z",
+      "endDate": "2023-11-01T15:00:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-406"
+      ]
+    }
+  },
+  {
+    "docId": "WO-408",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-408",
+      "manufacturingOrderId": "MO-177",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-11-01T15:00:00.000Z",
+      "endDate": "2023-11-01T16:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-407"
+      ]
+    }
+  },
+  {
+    "docId": "WO-409",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-409",
+      "manufacturingOrderId": "MO-177",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-11-01T16:00:00.000Z",
+      "endDate": "2023-11-01T16:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-408"
+      ]
+    }
+  },
+  {
+    "docId": "WO-410",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-410",
+      "manufacturingOrderId": "MO-177",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-11-01T16:30:00.000Z",
+      "endDate": "2023-11-01T17:15:00.000Z",
+      "durationMinutes": 45,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-409"
+      ]
+    }
+  },
+  {
+    "docId": "WO-411",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-411",
+      "manufacturingOrderId": "MO-178",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-11-02T08:00:00.000Z",
+      "endDate": "2023-11-02T09:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-412",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-412",
+      "manufacturingOrderId": "MO-178",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-11-02T09:00:00.000Z",
+      "endDate": "2023-11-02T09:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-411"
+      ]
+    }
+  },
+  {
+    "docId": "WO-413",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-413",
+      "manufacturingOrderId": "MO-178",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-11-02T09:30:00.000Z",
+      "endDate": "2023-11-02T10:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-412"
+      ]
+    }
+  },
+  {
+    "docId": "WO-414",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-414",
+      "manufacturingOrderId": "MO-178",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-11-02T10:00:00.000Z",
+      "endDate": "2023-11-02T10:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-413"
+      ]
+    }
+  },
+  {
+    "docId": "WO-415",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-415",
+      "manufacturingOrderId": "MO-179",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-11-02T08:30:00.000Z",
+      "endDate": "2023-11-02T12:30:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-416",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-416",
+      "manufacturingOrderId": "MO-179",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-11-02T12:30:00.000Z",
+      "endDate": "2023-11-02T14:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-415"
+      ]
+    }
+  },
+  {
+    "docId": "WO-417",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-417",
+      "manufacturingOrderId": "MO-179",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-11-02T14:30:00.000Z",
+      "endDate": "2023-11-02T17:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-416"
+      ]
+    }
+  },
+  {
+    "docId": "WO-418",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-418",
+      "manufacturingOrderId": "MO-179",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-11-02T17:30:00.000Z",
+      "endDate": "2023-11-02T19:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-417"
+      ]
+    }
+  },
+  {
+    "docId": "WO-419",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-419",
+      "manufacturingOrderId": "MO-179",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-11-02T19:30:00.000Z",
+      "endDate": "2023-11-02T20:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-418"
+      ]
+    }
+  },
+  {
+    "docId": "WO-420",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-420",
+      "manufacturingOrderId": "MO-179",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-11-02T20:30:00.000Z",
+      "endDate": "2023-11-02T21:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-419"
+      ]
+    }
+  },
+  {
+    "docId": "WO-421",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-421",
+      "manufacturingOrderId": "MO-180",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-11-02T09:00:00.000Z",
+      "endDate": "2023-11-02T11:00:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-422",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-422",
+      "manufacturingOrderId": "MO-180",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-11-02T11:00:00.000Z",
+      "endDate": "2023-11-02T12:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-421"
+      ]
+    }
+  },
+  {
+    "docId": "WO-423",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-423",
+      "manufacturingOrderId": "MO-180",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-11-02T12:00:00.000Z",
+      "endDate": "2023-11-02T13:30:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-422"
+      ]
+    }
+  },
+  {
+    "docId": "WO-424",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-424",
+      "manufacturingOrderId": "MO-180",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-11-02T13:30:00.000Z",
+      "endDate": "2023-11-02T14:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-423"
+      ]
+    }
+  },
+  {
+    "docId": "WO-425",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-425",
+      "manufacturingOrderId": "MO-180",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-11-02T14:30:00.000Z",
+      "endDate": "2023-11-02T15:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-424"
+      ]
+    }
+  },
+  {
+    "docId": "WO-426",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-426",
+      "manufacturingOrderId": "MO-180",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-11-02T15:00:00.000Z",
+      "endDate": "2023-11-02T15:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-425"
+      ]
+    }
+  },
+  {
+    "docId": "WO-427",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-427",
+      "manufacturingOrderId": "MO-181",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-11-02T09:30:00.000Z",
+      "endDate": "2023-11-02T12:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-428",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-428",
+      "manufacturingOrderId": "MO-181",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-11-02T12:30:00.000Z",
+      "endDate": "2023-11-02T14:00:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-427"
+      ]
+    }
+  },
+  {
+    "docId": "WO-429",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-429",
+      "manufacturingOrderId": "MO-181",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-11-02T14:00:00.000Z",
+      "endDate": "2023-11-02T15:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-428"
+      ]
+    }
+  },
+  {
+    "docId": "WO-430",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-430",
+      "manufacturingOrderId": "MO-181",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-11-02T15:00:00.000Z",
+      "endDate": "2023-11-02T15:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-429"
+      ]
+    }
+  },
+  {
+    "docId": "WO-431",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-431",
+      "manufacturingOrderId": "MO-181",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-11-02T15:30:00.000Z",
+      "endDate": "2023-11-02T16:15:00.000Z",
+      "durationMinutes": 45,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-430"
+      ]
+    }
+  },
+  {
+    "docId": "WO-432",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-432",
+      "manufacturingOrderId": "MO-182",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-11-02T10:00:00.000Z",
+      "endDate": "2023-11-02T11:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-433",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-433",
+      "manufacturingOrderId": "MO-182",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-11-02T11:00:00.000Z",
+      "endDate": "2023-11-02T11:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-432"
+      ]
+    }
+  },
+  {
+    "docId": "WO-434",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-434",
+      "manufacturingOrderId": "MO-182",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-11-02T11:30:00.000Z",
+      "endDate": "2023-11-02T12:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-433"
+      ]
+    }
+  },
+  {
+    "docId": "WO-435",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-435",
+      "manufacturingOrderId": "MO-182",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-11-02T12:00:00.000Z",
+      "endDate": "2023-11-02T12:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-434"
+      ]
+    }
+  },
+  {
+    "docId": "WO-436",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-436",
+      "manufacturingOrderId": "MO-183",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-11-02T10:30:00.000Z",
+      "endDate": "2023-11-02T14:30:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-437",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-437",
+      "manufacturingOrderId": "MO-183",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-11-02T14:30:00.000Z",
+      "endDate": "2023-11-02T16:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-436"
+      ]
+    }
+  },
+  {
+    "docId": "WO-438",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-438",
+      "manufacturingOrderId": "MO-183",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-11-02T16:30:00.000Z",
+      "endDate": "2023-11-02T19:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-437"
+      ]
+    }
+  },
+  {
+    "docId": "WO-439",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-439",
+      "manufacturingOrderId": "MO-183",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-11-02T19:30:00.000Z",
+      "endDate": "2023-11-02T21:30:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-438"
+      ]
+    }
+  },
+  {
+    "docId": "WO-440",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-440",
+      "manufacturingOrderId": "MO-183",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-11-02T21:30:00.000Z",
+      "endDate": "2023-11-02T22:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-439"
+      ]
+    }
+  },
+  {
+    "docId": "WO-441",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-441",
+      "manufacturingOrderId": "MO-183",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-11-02T22:30:00.000Z",
+      "endDate": "2023-11-02T23:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-440"
+      ]
+    }
+  },
+  {
+    "docId": "WO-442",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-442",
+      "manufacturingOrderId": "MO-184",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-11-03T08:00:00.000Z",
+      "endDate": "2023-11-03T10:00:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-443",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-443",
+      "manufacturingOrderId": "MO-184",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-11-03T10:00:00.000Z",
+      "endDate": "2023-11-03T11:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-442"
+      ]
+    }
+  },
+  {
+    "docId": "WO-444",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-444",
+      "manufacturingOrderId": "MO-184",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-11-03T11:00:00.000Z",
+      "endDate": "2023-11-03T12:30:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-443"
+      ]
+    }
+  },
+  {
+    "docId": "WO-445",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-445",
+      "manufacturingOrderId": "MO-184",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-11-03T12:30:00.000Z",
+      "endDate": "2023-11-03T13:30:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-444"
+      ]
+    }
+  },
+  {
+    "docId": "WO-446",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-446",
+      "manufacturingOrderId": "MO-184",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-11-03T13:30:00.000Z",
+      "endDate": "2023-11-03T14:00:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-445"
+      ]
+    }
+  },
+  {
+    "docId": "WO-447",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-447",
+      "manufacturingOrderId": "MO-184",
+      "workCenterId": "WC-PACK-01",
+      "startDate": "2023-11-03T14:00:00.000Z",
+      "endDate": "2023-11-03T14:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-446"
+      ]
+    }
+  },
+  {
+    "docId": "WO-448",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-448",
+      "manufacturingOrderId": "MO-185",
+      "workCenterId": "WC-EXT-02",
+      "startDate": "2023-11-03T08:30:00.000Z",
+      "endDate": "2023-11-03T11:30:00.000Z",
+      "durationMinutes": 180,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-449",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-449",
+      "manufacturingOrderId": "MO-185",
+      "workCenterId": "WC-CUT-02",
+      "startDate": "2023-11-03T11:30:00.000Z",
+      "endDate": "2023-11-03T13:00:00.000Z",
+      "durationMinutes": 90,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-448"
+      ]
+    }
+  },
+  {
+    "docId": "WO-450",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-450",
+      "manufacturingOrderId": "MO-185",
+      "workCenterId": "WC-PAINT-01",
+      "startDate": "2023-11-03T13:00:00.000Z",
+      "endDate": "2023-11-03T14:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-449"
+      ]
+    }
+  },
+  {
+    "docId": "WO-451",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-451",
+      "manufacturingOrderId": "MO-185",
+      "workCenterId": "WC-QC-01",
+      "startDate": "2023-11-03T14:00:00.000Z",
+      "endDate": "2023-11-03T14:30:00.000Z",
+      "durationMinutes": 30,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-450"
+      ]
+    }
+  },
+  {
+    "docId": "WO-452",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-452",
+      "manufacturingOrderId": "MO-185",
+      "workCenterId": "WC-PACK-02",
+      "startDate": "2023-11-03T14:30:00.000Z",
+      "endDate": "2023-11-03T15:15:00.000Z",
+      "durationMinutes": 45,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-451"
+      ]
+    }
+  },
+  {
+    "docId": "WO-MAINT-01",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-MAINT-01",
+      "manufacturingOrderId": "MO-MAINT",
+      "workCenterId": "WC-EXT-01",
+      "startDate": "2023-10-16T17:00:00.000Z",
+      "endDate": "2023-10-17T08:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": true,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-MAINT-02",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-MAINT-02",
+      "manufacturingOrderId": "MO-MAINT",
+      "workCenterId": "WC-CUT-01",
+      "startDate": "2023-10-23T17:00:00.000Z",
+      "endDate": "2023-10-24T08:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": true,
+      "dependsOnWorkOrderIds": []
+    }
+  },
+  {
+    "docId": "WO-MAINT-03",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-MAINT-03",
+      "manufacturingOrderId": "MO-MAINT",
+      "workCenterId": "WC-WELD-01",
+      "startDate": "2023-10-30T17:00:00.000Z",
+      "endDate": "2023-10-31T08:00:00.000Z",
+      "durationMinutes": 60,
+      "isMaintenance": true,
+      "dependsOnWorkOrderIds": []
+    }
+  }
+]
