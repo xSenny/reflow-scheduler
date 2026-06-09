@@ -72,8 +72,7 @@ Run `checkConstraints()` on the produced schedule as a safety net. Any violation
 | 1 | Delay Cascade | A runs long → B and C (downstream) get pushed |
 | 2 | Shift Boundary | 600-min order spans across end of shift into next day |
 | 3 | Maintenance Conflict | Order chain lands during a blocked window → pushed past it |
-| 4 | Multi Work Center | Orders on separate machines — no cross-machine conflicts |
-| 5 | Complex Chain | 3-level dependency chain + maintenance + shift boundary combined |
+
 
 Run all scenarios: `npm run demo`
 
